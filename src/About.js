@@ -4,9 +4,22 @@ import './About.css';
 class About extends Component {
     render() {
         return (
-            <div class="my-4 p-4">
-                <h2 class="my-2">Who am I?</h2>
-                <section>
+            <div className="container py-5">
+                <div className="row">
+                    <div className="col-lg-6 col-xs-12">
+                        <div className="photo-wrap mb-5">
+                            <img className="profile-pic" src="./images/profile_pic.JPG" alt="Roberto Mayen profile pic" />
+                        </div>
+                    </div>
+                    <div className="col-lg-6 col-xs-12">
+                        <h2 class="about-heading my-2">Who am I?</h2>
+                        <p>Hello, I am Roberto. I'm a dedicated and efficient Full Stack Web Developer. </p>
+                        <p> I have 2 years experience building reponsive websites and web apps. I have 4 years of experience working in hospitality and over 10 years experience in business and project management in a wide range of different industries (from public sector to tourism). </p>
+                        <p>
+                        Having lived and learned the pains of working with the wrong tools, I decided to learn to build the solutions to these problems. My main stack is MERN and am currently learning to code on the blockchain. </p>
+                    </div>
+                </div>
+                {/* <section>
                     <div class="d-inline-flex my-4">
                         <img class="mx-1" src="https://imgr.search.brave.com/TrLae7CP_05ypk30whohlRiuhLaaD7vORNg9VlS-9AE/fit/900/900/ce/1/aHR0cHM6Ly95dDMu/Z2dwaHQuY29tL2Ev/QUFUWEFKd2VuYk5R/VEJCbXpDV2Vtb1Fu/aU9yNUpSVWRnOUg1/UlE2U1JRPXM5MDAt/Yy1rLWMweGZmZmZm/ZmZmLW5vLXJqLW1v" width="50px" alt="CME logo" />
                         <h3 class="cme-header">CME</h3>
@@ -81,7 +94,7 @@ class About extends Component {
                         src="https://www.youtube.com/embed/9OpcYd4ysS4"></iframe>
                         <p className="mt-4">Blogjob! Opinión de boca en boca</p>
                     </div>
-                </section>
+                </section> */}
             </div>
         )
     }

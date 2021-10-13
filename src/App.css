@@ -14,12 +14,33 @@ CSS INDEX
 ===========================*/
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800");
 
+:root {
+  --primary-white:  #f6f3ed;
+  --primary-red: rgb(255,65,54);
+  --primary-orange: rgb(255, 179,64);
+  --primary-yellow: rgb(255,212,38);
+  --primary-green: rgb(49,222,75);
+  --primary-mint: rgb(102,212,207);
+  --primary-teal: rgb(93,230,255);
+  --primary-cyan: rgb(112,215,255);
+  --primary-blue: rgb(64, 156, 255);
+  --primary-indigo: rgb(125, 122, 255);
+  --primary-purple: rgb(125, 122, 255);
+  --primary-pink: rgb(255, 58, 95);
+  --primary-brown: rgb(181, 148, 105);
+  --primary-grey: rgb(152,152, 157);
+  --primary-dark: rgb(255,255,255, 0);
+  --primary-text: rgb(17, 46, 81);
+}
+
+
 .App {
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif !important;
   font-weight: normal;
   font-style: normal;
   text-align: justify;
-  color: #121212; 
+  color: #121212;
+  z-index: 1; 
 }
 
 * {
@@ -32,6 +53,11 @@ CSS INDEX
 
 img {
   max-width: 100%; 
+}
+
+* a {
+  text-decoration: none !important;
+  color: var(--primary-text) !important;
 }
 
 a:focus,
@@ -99,5 +125,17 @@ p {
   height: 100%; }
 
 
+.tsparticles-canvas-el {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+}
+
+@media screen and (max-width: 768px){
+  #tsparticles {
+    display: none;
+  }
+}
 
 

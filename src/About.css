@@ -1,7 +1,32 @@
+.photo-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.profile-pic {
+    width: 16rem;
+    border-radius: 50%;
+    padding: 0.3rem;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--primary-white);
+}
+
+.about-heading {
+    font-weight: 700;
+}
+
 .cme-header {
     color: rgb(152, 213, 41);
 }
 
 .aerostatika-header {
     color: rgb(54, 124, 180);
+}
+
+@media(max-width: 468px){
+    .profile-pic {
+        width: 10rem;
+    }
 }
