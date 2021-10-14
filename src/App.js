@@ -4,6 +4,7 @@ import Particles from "react-tsparticles";
 import Navigation from './Navbar';
 import Home from './Home';
 import About from './About';
+import Services from './Services';
 import Work from './Work';
 import Contact from './Contact';
 import { Route, Switch } from 'react-router';
@@ -96,6 +97,7 @@ function App() {
       </Switch> */}
       <Home />
       <About />
+      <Services />
       {/* <Work />
       <Contact />  */}
   </>
