@@ -28,7 +28,9 @@ CSS INDEX
   --primary-purple: rgb(125, 122, 255);
   --primary-pink: rgb(255, 58, 95);
   --primary-brown: rgb(181, 148, 105);
+  --primary-light-grey: rgb(244, 244, 244);
   --primary-grey: rgb(152,152, 157);
+  --primary-dark-grey: rgb(97,97,101);
   --primary-dark: rgb(255,255,255, 0);
   --primary-text: rgb(17, 46, 81);
 }

@@ -5,6 +5,7 @@ import Navigation from './Navbar';
 import Home from './Home';
 import About from './About';
 import Services from './Services';
+import Experience from './Experience';
 import Work from './Work';
 import Contact from './Contact';
 import { Route, Switch } from 'react-router';
@@ -98,6 +99,7 @@ function App() {
       <Home />
       <About />
       <Services />
+      <Experience />
       {/* <Work />
       <Contact />  */}
   </>

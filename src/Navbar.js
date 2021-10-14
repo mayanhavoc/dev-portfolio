@@ -50,7 +50,14 @@ class Navbar extends Component {
                                 className="nav-item">
                                     <a 
                                     className="nav-link" 
-                                    href="#">Work
+                                    href="#">Portfolio
+                                    </a>
+                                </li>
+                                <li 
+                                className="nav-item">
+                                    <a 
+                                    className="nav-link" 
+                                    href="#">Experience
                                     </a>
                                 </li>
                                 <li 
