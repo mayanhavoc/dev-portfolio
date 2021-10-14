@@ -25,6 +25,15 @@
     font-weight: 700;
 }
 
+.block-heading {
+    margin-bottom: 0;
+}
+
+.experience span {
+    color: var(--primary-pink);
+    font-weight: 500;
+}
+
 .timeline-block {
     width: calc(50% + 0.5rem);
     display: flex;

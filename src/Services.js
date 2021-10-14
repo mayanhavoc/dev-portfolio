@@ -15,7 +15,7 @@ class Services extends Component {
                 <div className="py-5">
                     <div className="container">
                         <div className="row">
-                            <div className="col-md-3 col-sm-6">
+                            <div className="col-lg-3 col-md-6 col-sm-6">
                                 <div className="box">
                                     <div className="circle">
                                         <FontAwesomeIcon 
@@ -24,10 +24,10 @@ class Services extends Component {
                                         size="2x" />                                   
                                     </div>
                                     <h3>Web Design</h3>
-                                    <p>I build and improve websites so that the user interface is easy to understand and navigate. </p>
+                                    <p>I build and improve websites so that they are easy to understand and navigate in order to convert visitors into customers. </p>
                                 </div>
                             </div>
-                            <div className="col-md-3 col-sm-6">
+                            <div className="col-lg-3 col-md-6 col-sm-6">
                                 <div className="box">
                                     <div className="circle">
                                     <FontAwesomeIcon 
@@ -36,10 +36,10 @@ class Services extends Component {
                                     size="2x"/> 
                                     </div>
                                     <h3>Web Development</h3>
-                                    <p>I build and mantain websites that look great, work fast and perform with seamlessly.</p>
+                                    <p>I build and mantain websites that look great, work fast and perform seamlessly.</p>
                                 </div>
                             </div>
-                            <div className="col-md-3 col-sm-6">
+                            <div className="col-lg-3 col-md-6 col-sm-6">
                                 <div className="box">
                                     <div className="circle">
                                     <FontAwesomeIcon 
@@ -49,11 +49,11 @@ class Services extends Component {
                                     </div>
                                     <h3>Business analysis</h3>
                                     <p>
-                                        Resource and capability analysis to develop competitive advantages in the externalbusiness environment. 
+                                        I provide resource and capability analysis to develop competitive advantages in the external business environment. 
                                     </p>
                                 </div>
                             </div>
-                            <div className="col-md-3 col-sm-6">
+                            <div className="col-lg-3 col-md-6 col-sm-6">
                                 <div className="box">
                                     <div className="circle">
                                     <FontAwesomeIcon 
@@ -63,7 +63,7 @@ class Services extends Component {
                                     </div>
                                     <h3>Market analysis</h3>
                                     <p>
-                                        Market trends and forces analysis. Crafting a marketing strategy.  
+                                        I can provide market trends and forces analysis and help you craft an effective marketing strategy.  
                                     </p>
                                 </div>
                             </div>

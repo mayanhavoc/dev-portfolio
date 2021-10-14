@@ -12,6 +12,11 @@
     color: var(--primary-text);
 }
 
+.Services p {
+    text-align: justify;
+    padding: 0 0.3125rem;
+}
+
 .Services .circle {
     position: relative;
     margin: 0.375rem auto;

@@ -13,7 +13,7 @@ class Experience extends Component {
                         <div className="marker"></div>
                         <div className="timeline-content">
                             <h3 className="year">2012-2013</h3>
-                            <h3>Espacios Extremos</h3>
+                            <h3 className="block-heading">Espacios Extremos</h3>
                             <span>Operations Director</span>
                             <p>Espacios Extremos was an initiative of Guatemala City's local government to promote safe spaces for  marginalized youths to practice urban sports.</p>
                             <iframe
@@ -28,8 +28,8 @@ class Experience extends Component {
                         <div className="marker"></div>
                         <div className="timeline-content">
                             <h3 className="year">2013</h3>
-                            <h3 className="bacilongas-header">Bacilongas</h3>
-                            <h4>Co-founder</h4>
+                            <h3 className="block-heading">Bacilongas</h3>
+                            <span>Co-founder</span>
                             <p>Bacilongas is an Etsy style platform for Latinamerica.</p>
                             <iframe
                             height="150"
@@ -43,8 +43,8 @@ class Experience extends Component {
                         <div className="marker"></div>
                         <div className="timeline-content">
                             <h3 className="year">2013-2015</h3>
-                            <h3>Aerostatika</h3>
-                            <h4>Operations Coordinator</h4>
+                            <h3 className="block-heading">Aerostatika</h3>
+                            <span>Operations Coordinator</span>
                             <p>I was in charge of operations for the first ever hot air ballon company in Guatemala.</p>
                             <iframe 
                             height="150"
@@ -58,8 +58,8 @@ class Experience extends Component {
                         <div className="marker"></div>
                         <div className="timeline-content">
                             <h3 className="year">2012-2016</h3>
-                            <h3 class="cme-header">CME</h3>
-                            <h4>Program Director</h4>
+                            <h3 class="cme-header block-heading">CME</h3>
+                            <span>Program Director</span>
                             <p>In 2012 I founded a startup incubator in my home town of Guatemala</p>
                             <iframe 
                             height="150"
@@ -74,8 +74,8 @@ class Experience extends Component {
                         <div className="marker"></div>
                         <div className="timeline-content">
                             <h3 className="year">2012-2013</h3>
-                            <h3>BlogJob!®</h3>
-                            <h4>Creative Director</h4>
+                            <h3 className="block-heading">BlogJob!®</h3>
+                            <span>Producer, Director</span>
                             <p>BlogJob!® was a opinion blog platform.</p>
                             <iframe 
                             height="150"
