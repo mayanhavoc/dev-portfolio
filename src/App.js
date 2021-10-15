@@ -1,13 +1,14 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Particles from "react-tsparticles";
-import Navigation from './Navbar';
-import Home from './Home';
-import About from './About';
-import Services from './Services';
-import Experience from './Experience';
-import Work from './Work';
-import Contact from './Contact';
+import Navigation from './Components/Navbar';
+import Home from './Components/Home';
+import About from './Components/About';
+import Services from './Components/Services';
+import Experience from './Components/Experience';
+import Portfolio from './Components/Portfolio';
+import Work from './Components/Work';
+import Contact from './Components/Contact';
 import { Route, Switch } from 'react-router';
 
 function App() {
@@ -100,8 +101,8 @@ function App() {
       <About />
       <Services />
       <Experience />
-      {/* <Work />
-      <Contact />  */}
+      <Portfolio />
+      {/* <Contact />  */}
   </>
   );
 }

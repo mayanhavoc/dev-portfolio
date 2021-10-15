@@ -1,0 +1,78 @@
+.portfolio-wrapper {
+    background: var(--primary-light-grey);
+    padding: 3rem 1rem;
+}
+
+.portfolio-image {
+    border-radius: 1rem;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-image-box {
+    position: relative;
+    margin: 1rem;
+}
+
+.overflow {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:rgba(0, 0, 0, 0.85);
+    opacity: 0;
+    background: url(data:;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAABl0RVh0U29mdHdhcmUAUGFpbnQuTkVUIHYzLjUuNUmK/OAAAAATSURBVBhXY2RgYNgHxGAAYuwDAA78AjwwRoQYAAAAAElFTkSuQmCC) repeat scroll transparent\9; /* ie fallback png background image */
+    z-index:9999;
+    color:white;
+    border: none;
+    border-radius: 1rem;
+}
+
+.portfolio p {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 700;
+    padding-top: 1rem;
+}
+
+.portfolio-image-popupbox {
+    width: 75%;
+    text-align: justify;
+    border-radius: 1rem;
+}
+
+.hyper-link {
+    cursor: pointer;
+    color: var(--primary-red);
+}
+
+.mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*------------ MEDIA ------------------*/
+@media(max-width: 768px) {
+    .portfolio-image-popupbox {
+      width: 100%;
+    }
+  }
+  
+  @media(max-height: 570px) {
+  .popupbox-wrapper {
+    height: 100%;
+  }
+    .portfolio-image-popupbox {
+      width: 50%;
+    }
+  }
+  
+  @media(max-height: 280px) {
+    .popupbox-wrapper {
+      height: 90%;
+    }
+      .portfolio-image-popupbox {
+        width: 30%;
+      }
+    }
