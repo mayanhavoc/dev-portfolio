@@ -102,7 +102,7 @@ function App() {
       <Services />
       <Experience />
       <Portfolio />
-      {/* <Contact />  */}
+      <Contact /> 
   </>
   );
 }

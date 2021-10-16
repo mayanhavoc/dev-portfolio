@@ -1,5 +1,6 @@
 .experience {
     padding: 0.7rem;
+    background: var(--primary-light-grey);
 }
 
 .experience-wrapper {

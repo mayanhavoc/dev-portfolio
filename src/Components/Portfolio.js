@@ -100,7 +100,7 @@ class Portfolio extends Component {
         return (
             <div className="portfolio portfolio-wrapper">
                 <div className="container">
-                <h1 className="text-uppercase text-center py-5">Portfolio</h1>
+                <h1 className="text-center py-5">Portfolio</h1>
                     <div className="row image-box-wrapper justify-content-center">
                        <div className="col-lg-4 portfolio-image-box" onClick={this.openTurkeys}>
                             <p>Turkeys of Sacramento</p>

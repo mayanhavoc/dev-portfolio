@@ -3,6 +3,11 @@
     padding: 3rem 1rem;
 }
 
+.portfolio h1 {
+  font-weight: 700;
+  color: var(--primary-text);
+}
+
 .portfolio-image {
     border-radius: 1rem;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);

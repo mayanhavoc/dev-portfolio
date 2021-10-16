@@ -1,0 +1,74 @@
+.contacts {
+    background: var(--primary-light-grey);
+    padding: 1.3rem 0;
+}
+
+.contacts h1 {
+    font-weight: 700;
+    color: var(--primary-text);
+}
+
+.contacts p {
+    color: var(--primary-text);
+    font-size: 1.2rem;
+    padding: 0 4rem;
+}
+
+.contacts input, .contacts textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    background: none;
+    resize: none;
+    border: 0;
+    border-bottom: 0.125rem solid var(--primary-pink);
+    box-shadow: none;
+    top: 0;
+    outline: 0 !important;
+}
+
+.contacts input {
+    margin: 0.5rem 0;
+}
+
+.contacts textarea {
+    margin: 2rem 0;
+    border: 0.125rem solid var(--primary-pink);
+}
+
+.contacts .container {
+    padding: 4rem 0;
+}
+
+.contacts input:focus, .contacts textarea:focus {
+    border: none;
+    background: transparent;
+    border-bottom: 0.125rem solid var(--primary-cyan);
+    color: var(--primary-text);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+.contact-btn {
+    margin: 1rem 0;
+    padding: 1rem 2rem;
+    background: var(--primary-cyan);
+    border-radius: 1rem;
+    color: var(--primary-text);
+    font-weight: 700;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-btn:hover {
+    transform: scale(1.1);
+    background: var(--primary-pink);
+    color: var(--primary-white);
+}
+
+@media screen and (max-width: 768px){
+    .contacts .container {
+        padding: 0 3rem;
+    }
+}
