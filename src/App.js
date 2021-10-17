@@ -7,8 +7,8 @@ import About from './Components/About';
 import Services from './Components/Services';
 import Experience from './Components/Experience';
 import Portfolio from './Components/Portfolio';
-import Work from './Components/Work';
 import Contact from './Components/Contact';
+import Footer from './Components/Footer';
 import { Route, Switch } from 'react-router';
 
 function App() {
@@ -103,6 +103,7 @@ function App() {
       <Experience />
       <Portfolio />
       <Contact /> 
+      <Footer />
   </>
   );
 }
