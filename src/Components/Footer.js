@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Link } from 'react-scroll';
+
 import {
     TwitterShareButton, 
     LinkedinShareButton,
@@ -33,18 +35,44 @@ class Footer extends Component {
                         <div className="col-lg-3 col-md-6 col-sm-6">
                             <div className="row">
                                 <div className="col d-flex flex-column justify-content-center">
-                                    <div>
-                                    <a className="footer-nav"
-                                    href="#Home"
-                                    >Home</a>     
-                                    </div>
-                                    <a className="footer-nav">About</a>    
-                                    <a className="footer-nav">Services</a>    
+                                    <Link className="footer-nav"
+                                    href="#"
+                                    to="home"
+                                    smooth={true}
+                                    >Home
+                                    </Link>     
+                                    <Link className="footer-nav"
+                                    href="#"
+                                    to="about"
+                                    smooth={true}
+                                    >About
+                                    </Link>    
+                                    <Link className="footer-nav"
+                                    href="#"
+                                    to="Services"
+                                    smooth={true}
+                                    >Services
+                                    </Link>    
                                 </div>    
                                 <div className="col d-flex flex-column justify-content-center">
-                                    <a className="footer-nav">Experience</a>    
-                                    <a className="footer-nav">Portfolio</a>    
-                                    <a className="footer-nav">Contact</a>    
+                                    <Link className="footer-nav"
+                                    href="#"
+                                    to="experience"
+                                    smooth={true}
+                                    >Experience
+                                    </Link>    
+                                    <Link className="footer-nav"
+                                    href="#"
+                                    to="portfolio"
+                                    smooth={true}
+                                    >Portfolio
+                                    </Link>    
+                                    <Link className="footer-nav"
+                                    href="#"
+                                    to="contact"
+                                    smooth={true}
+                                    >Contact
+                                    </Link>    
                                 </div>    
                             </div>    
                         </div>

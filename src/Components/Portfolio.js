@@ -11,7 +11,7 @@ class Portfolio extends Component {
             <a href="https://github.com/mayanhavoc/yelp_camp">
             <img className="portfolio-image-popupbox" src="./images/discover_guatemala.png" alt="Discover Guatemala website" /></a>
             <p>A platform to crowdsource lodgings. Built with NodeJS, Express and Mongo.</p>
-            <b>GitHub:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/mayanhavoc/yelp_camp")}>https://github.com/mayanhavoc/yelp_camp</a>
+            <b>GitHub:</b> <a className="hyper-link" href="https://github.com/mayanhavoc/yelp_camp" onClick={() => window.open("https://github.com/mayanhavoc/yelp_camp")}>https://github.com/mayanhavoc/yelp_camp</a>
             </>
         )
         PopupboxManager.open({
@@ -34,7 +34,7 @@ class Portfolio extends Component {
             <a href="https://github.com/mayanhavoc/turkeys_of_sacramento">
             <img className="portfolio-image-popupbox" src="./images/tos_screenshot.png" alt="Turkeys of Sacramento game" /></a>
             <p>A platform to crowdsource lodgings. Built with NodeJS, Express and Mongo.</p>
-            <b>GitHub:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/mayanhavoc/turkeys_of_sacramento")}>https://github.com/mayanhavoc/turkeys_of_sacramento</a>
+            <b>GitHub:</b> <a href="https://github.com/mayanhavoc/turkeys_of_sacramento" className="hyper-link" onClick={() => window.open("https://github.com/mayanhavoc/turkeys_of_sacramento")}>https://github.com/mayanhavoc/turkeys_of_sacramento</a>
             </>
         )
         PopupboxManager.open({
@@ -57,7 +57,7 @@ class Portfolio extends Component {
             <a href="https://github.com/mayanhavoc/recipe_finder">
             <img className="portfolio-image-popupbox" src="./images/recipe_finder_desktop.png" alt="Recipe finder web app"/></a>
             <p>A platform to crowdsource lodgings. Built with NodeJS, Express and Mongo.</p>
-            <b>GitHub:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/mayanhavoc/recipe_finder")}>https://github.com/mayanhavoc/recipe_finder</a>
+            <b>GitHub:</b> <a href="https://github.com/mayanhavoc/recipe_finder" className="hyper-link" onClick={() => window.open("https://github.com/mayanhavoc/recipe_finder")}>https://github.com/mayanhavoc/recipe_finder</a>
             </>
         )
         PopupboxManager.open({
@@ -77,10 +77,9 @@ class Portfolio extends Component {
     openExplorer() {
         const content = (
             <>
-            <a href="https://github.com/mayanhavoc/Github-finder">
-            <img className="portfolio-image-popupbox" src="./images/github_explorer_desktop.png" alt="Github explorer web app"/></a>
+            <img className="portfolio-image-popupbox" src="./images/github_explorer_desktop.png" alt="Github explorer web app"/>
             <p>A platform to crowdsource lodgings. Built with NodeJS, Express and Mongo.</p>
-            <b>GitHub:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/mayanhavoc/Github-finder")}>https://github.com/mayanhavoc/Github-finder</a>
+            <b>GitHub:</b> <a href="https://github.com/mayanhavoc/Github-finder" className="hyper-link" onClick={() => window.open("https://github.com/mayanhavoc/Github-finder")}>https://github.com/mayanhavoc/Github-finder</a>
             </>
         )
         PopupboxManager.open({

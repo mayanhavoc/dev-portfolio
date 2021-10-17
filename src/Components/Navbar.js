@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './Navbar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
-import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import { Link } from 'react-scroll';
 
 
 class Navbar extends Component {
@@ -35,11 +35,11 @@ class Navbar extends Component {
                                     href="#"
                                     smooth={true}
                                     >
+                                    Home
                                     <span 
                                     className="sr-only">
                                     (current)
                                     </span>
-                                    Home
                                     </Link>
                                 </li>
                                 <li 
@@ -48,7 +48,6 @@ class Navbar extends Component {
                                     className="nav-link"
                                     aria-current="page"
                                     to="about" 
-                                    href="#"
                                     smooth={true}
                                     >
                                     About
@@ -59,11 +58,23 @@ class Navbar extends Component {
                                     <Link 
                                     className="nav-link" 
                                     href="#"
-                                    arria-current="page"
                                     to="services"
+                                    arria-current="page"
                                     smooth={true}
                                     >
                                     Services
+                                    </Link>
+                                </li>
+                                <li 
+                                className="nav-item">
+                                    <Link 
+                                    className="nav-link" 
+                                    href="#"
+                                    to="experience"
+                                    aria-current="page"
+                                    smooth={true}
+                                    >
+                                    Experience
                                     </Link>
                                 </li>
                                 <li 
@@ -83,20 +94,8 @@ class Navbar extends Component {
                                     <Link 
                                     className="nav-link" 
                                     href="#"
-                                    to="experience"
-                                    aria-current="page"
-                                    smooth={true}
-                                    >
-                                    Experience
-                                    </Link>
-                                </li>
-                                <li 
-                                className="nav-item">
-                                    <Link 
-                                    className="nav-link" 
-                                    aria-current="page"
-                                    href="#"
                                     to="contact"
+                                    aria-current="page"
                                     smooth={true}
                                     >
                                     Contact

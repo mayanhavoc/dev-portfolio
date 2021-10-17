@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Typed from 'react-typed';
+import { Link } from 'react-scroll';
 import './Home.css';
 
 class Home extends Component {
@@ -14,7 +15,13 @@ class Home extends Component {
                         typeSpeed={40}
                         backSpeed={60}
                     />
-                    <a href="" className="Home-btn">Contact me</a>
+                    <Link 
+                    href="#" 
+                    to="contact"
+                    className="Home-btn"
+                    smooth={true}
+                    >Contact me
+                    </Link>
                 </section>
             </section>
             </>

@@ -9,7 +9,6 @@ import Experience from './Components/Experience';
 import Portfolio from './Components/Portfolio';
 import Contact from './Components/Contact';
 import Footer from './Components/Footer';
-import { Route, Switch } from 'react-router';
 
 function App() {
   return (
@@ -91,12 +90,6 @@ function App() {
           detectRetina: true,
         }}
       />
-      {/* <Switch>
-        <Route exact path='/' component={Home}/>
-        <Route path='/About' component={About}/>
-        <Route path='/Work' component={Work}/>
-        <Route path='/Contact' component={Contact}/>
-      </Switch> */}
       <Home />
       <About />
       <Services />
