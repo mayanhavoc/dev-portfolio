@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import './Navbar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+
 
 class Navbar extends Component {
     render() {
@@ -9,7 +11,7 @@ class Navbar extends Component {
             <div>
                 <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
                     <div className="container">
-                        <a className="logo" href="#"><img src="./images/logo.png" alt="micochango logo" /></a>
+                        <Link className="logo" href="#"><img src="./images/logo.png" alt="micochango logo" /></Link>
                         <button 
                         className="navbar-toggler" 
                         type="button" 
@@ -26,46 +28,79 @@ class Navbar extends Component {
                             <ul 
                             className="navbar-nav ms-auto mb-2 mb-lg-0">
                                 <li className="nav-item">
-                                    <a 
+                                    <Link 
                                     className="nav-link" 
                                     aria-current="page" 
-                                    href="#">Home
-                                    </a>
+                                    to="home"
+                                    href="#"
+                                    smooth={true}
+                                    >
+                                    <span 
+                                    className="sr-only">
+                                    (current)
+                                    </span>
+                                    Home
+                                    </Link>
                                 </li>
                                 <li 
                                 className="nav-item">
-                                    <a 
-                                    className="nav-link" 
-                                    href="#">About
-                                    </a>
+                                    <Link 
+                                    className="nav-link"
+                                    aria-current="page"
+                                    to="about" 
+                                    href="#"
+                                    smooth={true}
+                                    >
+                                    About
+                                    </Link>
                                 </li>
                                 <li 
                                 className="nav-item">
-                                    <a 
+                                    <Link 
                                     className="nav-link" 
-                                    href="#">Services
-                                    </a>
+                                    href="#"
+                                    arria-current="page"
+                                    to="services"
+                                    smooth={true}
+                                    >
+                                    Services
+                                    </Link>
                                 </li>
                                 <li 
                                 className="nav-item">
-                                    <a 
+                                    <Link
                                     className="nav-link" 
-                                    href="#">Portfolio
-                                    </a>
+                                    href="#"
+                                    to="portfolio"
+                                    aria-current="page"
+                                    smooth={true}
+                                    >
+                                    Portfolio
+                                    </Link>
                                 </li>
                                 <li 
                                 className="nav-item">
-                                    <a 
+                                    <Link 
                                     className="nav-link" 
-                                    href="#">Experience
-                                    </a>
+                                    href="#"
+                                    to="experience"
+                                    aria-current="page"
+                                    smooth={true}
+                                    >
+                                    Experience
+                                    </Link>
                                 </li>
                                 <li 
                                 className="nav-item">
-                                    <a 
+                                    <Link 
                                     className="nav-link" 
-                                    href="#">Contact
-                                    </a>
+                                    aria-current="page"
+                                    href="#"
+                                    to="contact"
+                                    smooth={true}
+                                    >
+                                    Contact
+                                    </Link>
                                 </li>
                             </ul>
                         </div>
