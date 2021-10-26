@@ -1,17 +1,26 @@
 import React, { Component } from 'react';
+import { Link, animateScroll as scroll } from 'react-scroll';
 import './Navbar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
-import { Link } from 'react-scroll';
-
 
 class Navbar extends Component {
     render() {
         return (
             <div>
-                <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-                    <div className="container">
-                        <Link className="logo" href="#"><img src="./images/logo.png" alt="micochango logo" /></Link>
+                <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="navbar">
+                    <div className="container nav-content">
+                        <Link
+                        exact activeClass="active" 
+                        to="/"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
+                        className="logo" 
+                        >
+                        <img src="./images/logo.png" alt="micochango logo" />
+                        </Link>
                         <button 
                         className="navbar-toggler" 
                         type="button" 
@@ -28,12 +37,15 @@ class Navbar extends Component {
                             <ul 
                             className="navbar-nav ms-auto mb-2 mb-lg-0">
                                 <li className="nav-item">
-                                    <Link 
+                                    <Link
                                     className="nav-link" 
-                                    aria-current="page" 
-                                    to="home"
-                                    href="#"
+                                    exact activeClass="active"
+                                    to="/"
+                                    spy={true}
                                     smooth={true}
+                                    offset={-70}
+                                    duration={500}
+                                    aria-current="page" 
                                     >
                                     Home
                                     <span 
@@ -44,35 +56,45 @@ class Navbar extends Component {
                                 </li>
                                 <li 
                                 className="nav-item">
-                                    <Link 
+                                    <Link
+                                    exact activeClassName="active-link" 
                                     className="nav-link"
                                     aria-current="page"
-                                    to="about" 
+                                    to="About"
+                                    spy={true}
                                     smooth={true}
+                                    offset={-70}
+                                    duration={500} 
                                     >
                                     About
                                     </Link>
                                 </li>
                                 <li 
                                 className="nav-item">
-                                    <Link 
+                                    <Link
+                                    exact activeClassName="active-link" 
                                     className="nav-link" 
-                                    href="#"
-                                    to="services"
-                                    arria-current="page"
+                                    to="Services"
+                                    spy={true}
                                     smooth={true}
+                                    offset={-70}
+                                    duration={500}
+                                    arria-current="page"
                                     >
                                     Services
                                     </Link>
                                 </li>
                                 <li 
                                 className="nav-item">
-                                    <Link 
+                                    <Link
+                                    exact activeClass="active-link" 
                                     className="nav-link" 
-                                    href="#"
-                                    to="experience"
-                                    aria-current="page"
+                                    to="Experience"
+                                    spy={true}
                                     smooth={true}
+                                    offset={-70}
+                                    duration={500}
+                                    aria-current="page"
                                     >
                                     Experience
                                     </Link>
@@ -80,23 +102,29 @@ class Navbar extends Component {
                                 <li 
                                 className="nav-item">
                                     <Link
+                                    exact activeClass="active-link"
                                     className="nav-link" 
-                                    href="#"
-                                    to="portfolio"
-                                    aria-current="page"
+                                    to="Portfolio"
+                                    spy={true}
                                     smooth={true}
+                                    offset={-70}
+                                    duration={500}
+                                    aria-current="page"
                                     >
                                     Portfolio
                                     </Link>
                                 </li>
                                 <li 
                                 className="nav-item">
-                                    <Link 
+                                    <Link
+                                    exact activeClassName="active-link" 
                                     className="nav-link" 
-                                    href="#"
-                                    to="contact"
-                                    aria-current="page"
+                                    to="Contact"
+                                    spy={true}
                                     smooth={true}
+                                    offset={-70}
+                                    duration={500}
+                                    aria-current="page"
                                     >
                                     Contact
                                     </Link>

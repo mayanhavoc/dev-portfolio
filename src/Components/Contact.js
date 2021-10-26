@@ -3,16 +3,16 @@ import {useForm} from 'react-hook-form';
 import emailjs from 'emailjs-com';
 import{ init } from 'emailjs-com';
 import './Contact.css'
-init("user_D0piwkUGGDTNSJ3HF96uD");
+init(process.env.REACT_APP_EMAILJS_USERID);
 
 
 const Contact = () => {
     const [successMessage, setSuccessMessage] = useState('');
     const { register, handleSubmit, formState: {errors}  } = useForm();
 
-    const serviceID = "service_ID";
-    const templateID = "template_ID";
-    const userID = "user_D0piwkUGGDTNSJ3HF96uD";
+    const serviceID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
+    const templateID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
+    const userID = process.env.REACT_APP_EMAILJS_USERID;
 
     const onSubmit = (data, r) => {
       sendEmail(
@@ -37,7 +37,7 @@ const Contact = () => {
     };
 
     return (
-        <div className="contacts">
+        <div className="Contact component-wrapper">
             <div className="text-center">
                 <h1>Contact me</h1>
                 <p>Please fill out the form and write a short description of your project. I'll get back to you assoon     as possible.</p>

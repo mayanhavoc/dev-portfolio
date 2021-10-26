@@ -6,9 +6,9 @@ import './Experience.css';
 class Experience extends Component {
     render() {
         return (
-            <div className="experience">
+            <div className="Experience component-wrapper">
                 <div className="d-flex justify-content-center my-5">
-                    <h1>Experience</h1>
+                    <h2 className="sub-heading">Experience</h2>
                 </div>
                 <div className="container experience-wrapper">
                     <div className="timeline-block timeline-block-right">

@@ -97,7 +97,7 @@ class Portfolio extends Component {
    
     render() {
         return (
-            <div className="portfolio portfolio-wrapper">
+            <div className="Portfolio component-wrapper">
                 <div className="container">
                 <h1 className="text-center py-5">Portfolio</h1>
                     <div className="row image-box-wrapper justify-content-center">

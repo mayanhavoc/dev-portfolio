@@ -1,6 +1,5 @@
-.portfolio-wrapper {
+.Portfolio {
     background: var(--primary-light-grey);
-    padding: 3rem 1rem;
 }
 
 .portfolio h1 {

@@ -1,7 +1,5 @@
-.Home-wrapper {
-    position: relative;
+.Home {
     background: var(--primary-white);
-    height: 90vh;
 }
 
 .Home-main {
@@ -16,11 +14,6 @@
     align-items: center;
     text-align: center;
     z-index: 100;
-}
-
-.Home-title {
-    text-transform: uppercase;
-    font-weight: 700;
 }
 
 .Home-btn {
