@@ -1,16 +1,9 @@
-.contacts {
+.Contact {
     background: var(--primary-light-grey);
     padding: 1.3rem 0;
 }
 
-.contacts h1 {
-    font-weight: 700;
-    color: var(--primary-text);
-}
-
-.contacts p {
-    color: var(--primary-text);
-    font-size: 1.2rem;
+.Contact p {
     padding: 0 4rem;
 }
 

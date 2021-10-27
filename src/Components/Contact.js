@@ -37,9 +37,9 @@ const Contact = () => {
     };
 
     return (
-        <div className="Contact component-wrapper">
+        <div className="Contact component-wrapper d-flex flex-column justify-content-center align-items-center">
+            <h2 className="sub-heading">Contact me</h2>
             <div className="text-center">
-                <h1>Contact me</h1>
                 <p>Please fill out the form and write a short description of your project. I'll get back to you assoon     as possible.</p>
                 <span className="success-message">{successMessage}</span>
             </div>

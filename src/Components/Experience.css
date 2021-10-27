@@ -1,15 +1,15 @@
-.experience {
+.Experience {
     padding: 0.7rem;
     background: var(--primary-light-grey);
 }
 
-.experience-wrapper {
+.Experience-wrapper {
     position: relative;
     padding: 3.125rem;
     overflow: hidden;
 }
 
-.experience-wrapper::before {
+.Experience-wrapper::before {
     position: absolute;
     content: "";
     top: 0;
@@ -21,25 +21,14 @@
     z-index: 1;
 }
 
-.experience h1 {
-    color: var(--primary-text);
-    font-weight: 700;
-}
-
-.block-heading {
-    margin-bottom: 0;
-}
-
-.experience span {
-    color: var(--primary-pink);
-    font-weight: 500;
-}
-
 .timeline-block {
-    width: calc(50% + 0.5rem);
+    width: calc(40% + 0.5rem);
     display: flex;
     justify-content: space-between;
     clear: both;
+    border-radius: 0.25rem;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
 }
 
 .timeline-block-right {
@@ -69,13 +58,28 @@
 }
 
 .year {
-    margin-top: 0.3125rem;
     color: var(--primary-pink);
-    font-weight: 900;
+    font-weight: 700;
+    margin: 0;
+    text-shadow:0 0.5px 2px rgba(0, 0, 0, 0.25);
+}
+
+.brand {
+    text-shadow:0 0.5px 2px rgba(0, 0, 0, 0.25);
+}
+
+.job-title {
+    color: var(--primary-dark-grey);
+    font-size: 0.975rem;
+    font-weight: 700;
+}
+
+.job-description {
+    font-size: 0.9rem;
 }
 
 .cme-header {
-    color: rgb(152, 213, 41);
+    text-shadow: 1px 3px 5px rgba(152, 213, 41, 0.25);
 }   
     
 /* Media queries */
@@ -103,25 +107,27 @@
     }
 } */
 
-@media screen and (max-width: 768px){
-    .experience .container {
+@media screen and (max-width: 1000px){
+    .Experience .container {
         padding-left: 0;
     }
-    .experience-wrapper::before {
-        left: 0.5rem;
+    .Experience-wrapper::before {
+        left: 12rem;
         margin-bottom: 1.875rem;
     }
     .marker {
         position: absolute;
     }
-    .timeline-block-right {
+    .timeline-block-right,
+    .timeline-block-left
+    {
         float: none;
-        width: 100%;
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 1rem;
     }
     .timeline-block-left {
-        float: none;
         direction: ltr;
-        width: 100%;
     }
     .timeline-content {
         padding-left: 2rem;

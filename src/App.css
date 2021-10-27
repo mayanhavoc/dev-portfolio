@@ -62,7 +62,7 @@ table {
 /*===========================
       01.COMMON css 
 ===========================*/
-@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800");
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=PT+Serif:wght@400;700&display=swap');
 
 :root {
   --primary-white:  #f6f3ed;
@@ -157,6 +157,7 @@ ul, ol {
 .sub-heading, 
 .nav-link {
   font-weight: 600;
+  margin: 0;
 }
 
 .secondary-heading {
@@ -164,7 +165,9 @@ ul, ol {
   font-size: 1.3rem;
 }
 
-
+.secondary-font {
+  font-family: 'PT serif', serif;
+}
 
 
 

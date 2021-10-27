@@ -97,9 +97,9 @@ class Portfolio extends Component {
    
     render() {
         return (
-            <div className="Portfolio component-wrapper">
+            <div className="Portfolio component-wrapper d-flex flex-column justify-content-center align-items-center">
+                <h2 className="sub-heading py-5">Portfolio</h2>
                 <div className="container">
-                <h1 className="text-center py-5">Portfolio</h1>
                     <div className="row image-box-wrapper justify-content-center">
                        <div className="col-lg-4 portfolio-image-box" onClick={this.openTurkeys}>
                             <p>Turkeys of Sacramento</p>
