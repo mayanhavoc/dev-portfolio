@@ -9,14 +9,14 @@ const YoutubeEmbed = ({ embedId }) => (
     url={`https://noembed.com/embed&url=https://www.youtube.com/embed/${embedId}`}
     // url={`https://www.youtube.com/embed/${embedId}`}
     width="640"
-    height="360"
+    height="480"
     frameBorder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowFullScreen
     title="Embedded youtube"
     />
     {/* <iframe
-      width="853"
+      width="480"
       height="480"
       src={`https://www.youtube.com/embed/${embedId}`}
       frameBorder="0"

@@ -19,7 +19,7 @@ class Navbar extends Component {
                         duration={500}
                         className="logo" 
                         >
-                        <img src="./images/logo.png" alt="micochango logo" />
+                        <img src="./images/me_chilling.png" alt="me chilling" />
                         </Link>
                         <button 
                         className="navbar-toggler" 
