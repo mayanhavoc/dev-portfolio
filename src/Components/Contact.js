@@ -38,7 +38,7 @@ const Contact = () => {
 
     return (
         <div className="Contact component-wrapper d-flex flex-column justify-content-center align-items-center">
-            <h2 className="sub-heading">Contact me</h2>
+            <h2 className="section-heading highlight">Contact me</h2>
             <div className="text-center">
                 <p>Please fill out the form and write a short description of your project. I'll get back to you assoon     as possible.</p>
                 <span className="success-message">{successMessage}</span>
@@ -144,7 +144,16 @@ const Contact = () => {
                             </div>
                         </div>
                         <div className="container p-0 d-flex px-2 justify-content-end">
-                            <button className="btn contact-btn" type="submit">Submit</button>
+                            <button 
+                            className="btn contact-btn g-recaptcha"
+                            data-sitekey="reCAPTCHA_site_key"
+                            data-callback = "onSubmit"
+                            data-action="submit" 
+                            id="contact-submit" 
+                            type="submit"
+                            
+                            >
+                            Submit</button>
                         </div>
                     </div>
                 </form>  

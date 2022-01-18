@@ -20,9 +20,9 @@ class App extends Component {
         <About />
         <Services /> */}
         <Experience />
-        {/* <Portfolio />
+        {/* <Portfolio /> */}
         <Contact />
-        <Footer />  */}
+        {/* <Footer />  */}
     </div>
     );
   }

@@ -262,6 +262,21 @@ ol {
 	font-weight: 700;
 }
 
+.section-heading {
+	text-align: center;
+}
+
+.brand {
+	color: #ffe600 !important;
+	text-shadow: 0 0.1rem 0.01rem rgba(255, 0, 0.8);
+}
+
+.highlight {
+	font-weight: bold;
+	color: var(--highlight);
+	text-shadow: 0 0.1rem 0.01rem rgba(255, 0, 0.8);
+}
+
 .sub-heading,
 .nav-link {
 	font-weight: 600;
