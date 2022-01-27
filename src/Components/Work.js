@@ -5,7 +5,7 @@ class Work extends Component {
     render() {
         return (
             <div>
-                <h1>Work</h1>
+                <h2 className="brand">Work</h2>
                 <section>
                     <div>
                         <a href="https://discoverguatemala.herokuapp.com/">Discover Guatemala</a>                

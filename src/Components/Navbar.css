@@ -1,32 +1,91 @@
 .logo {
-    width: 3.125rem;
+	width: 3.125rem;
+	border-radius: 50%;
+	/* margin-left: 1rem; */
+}
+
+.logo:hover {
+	transform: scale(1.1);
 }
 
 nav {
-    z-index: 2;
+	z-index: 2;
+}
+
+.nav-brand {
+	display: inline-block;
+	font-family: 'Rubik Mono One', sans-serif;
+	font-size: 1.5rem;
+	padding: 0;
+	/* padding-left: 1rem; */
+	margin: auto;
+	margin-left: 1.625rem;
+}
+
+.nav-brand:hover {
+	transform: scale(1.1);
 }
 
 /* MENU LINKS */
 nav a.nav-link {
-    cursor: pointer;
+	cursor: pointer;
 }
 
 .navbar-nav > li > a {
-    margin-right: 0.3125rem;
-    margin-left: 0.3125rem;
-    color: var(--primary-white) !important;
-    border-bottom: 0.1875rem solid var(--primary-dark);
+	margin-right: 0.3125rem;
+	margin-left: 0.3125rem;
+	color: var(--primary-white) !important;
 }
 
 .logo {
-    max-width: 17.25rem;
-    padding: 0 !important;
+	max-width: 17.25rem;
+	padding: 0 !important;
 }
 
-.navbar-nav > li > a.active, .navbar-nav > li > a.active:focus, .navbar-nav > li > a:hover {
-    border-bottom: 0.1875rem solid var(--primary-orange);
-} 
+.navbar-nav > li > a.active,
+.navbar-nav > li > a.active:focus,
+.navbar-nav > li > a:hover {
+	border-bottom: 0.1875rem solid var(--primary-orange);
+}
+
+.navbar-toggler {
+	background: var(--primary-yellow);
+	margin-right: 1.625rem;
+	box-shadow: 0 0.1rem 0.01rem rgba(255, 0, 0.8);
+}
 
 .hamburger-icon {
-    color: var(--primary-white);
+	color: var(--primary-red);
+	/* border-top: 0.5px dotted var(--primary-yellow); */
+}
+
+@media screen and (min-width: 280px) and (max-width: 374px) {
+	.navbar {
+		margin: 0;
+		padding: 0;
+	}
+	.logo {
+		width: 2.5rem;
+	}
+	.nav-link {
+		margin: 0;
+		padding: 0;
+	}
+	.nav-brand {
+		margin-left: 0.325rem;
+		padding: 0;
+		font-size: 1.25rem;
+	}
+	.navbar-toggler {
+		margin: 0.625rem;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.nav-link {
+		margin-left: 3.5rem;
+	}
+	.navbar-toggler {
+		margin-right: 3.5rem;
+	}
 }

@@ -6,11 +6,11 @@ import './Experience.css';
 class Experience extends Component {
     render() {
         return (
-            <div className="container">
-                <h2 className="section-heading sub-heading py-5 highlight">Experience</h2>
-                <div className="row">
+            <div className="Experience container">
+                <h2 className="section-heading sub-heading py-5 brand">Experience</h2>
+                <div className="row mx-auto">
                     {/*  */}
-                    <div className="col col-sm col-md">
+                    <div className="col-lg-4 col-md col-sm">
                         {/* <div className="marker"></div> */}
                         <div className="timeline-content">
                             <h3 className="year">2012-2016</h3>
@@ -26,7 +26,7 @@ class Experience extends Component {
                         </div>
                     </div>
                     {/*  */}
-                    <div className="col col-sm col-md">
+                    <div className="col-lg-4 col-md col-sm">
                         {/* <div className="marker"></div> */}
                         <div className="timeline-content">
                             <h3 className="year">2013-2015</h3>
@@ -44,7 +44,7 @@ class Experience extends Component {
                 {/* </div> */}
                     {/*  */}
                 {/* <div className="row"> */}
-                    <div className="col col-sm col-md">
+                    <div className="col-lg-4 col-md col-sm">
                         {/* <div className="marker"></div> */}
                         <div className="timeline-content">
                             <h3 className="year">2013-2014</h3>
@@ -61,7 +61,7 @@ class Experience extends Component {
                     </div>
                     
                     {/*  */}
-                    <div className="col col-sm col-md">
+                    <div className="col-lg-4 col-md col-sm">
                         {/* <div className="marker"></div> */}
                         <div className="timeline-content">
                             <h3 className="year">2013</h3>
@@ -79,7 +79,7 @@ class Experience extends Component {
                 {/* </div> */}
                     {/*  */}
                 {/* <div className="row"> */}
-                    <div className="col col-sm col-md">
+                    <div className="col-lg-4 col-md-6 col-sm">
                         {/* <div className="marker"></div> */}
                         <div className="timeline-content">
                             <h3 className="year">2012</h3>

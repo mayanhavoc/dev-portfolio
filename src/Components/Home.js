@@ -86,7 +86,7 @@ class Home extends Component {
             /> 
             <section className="Home component-wrapper">
                 <section className="Home-main">
-                    <h1 className="Home heading">Roberto M</h1>
+                    <h1 className="Home heading brand">Roberto M</h1>
                     <Typed
                         strings={["Full Stack Web Developer"]}
                         typeSpeed={40}

@@ -7,32 +7,30 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 class Navbar extends Component {
     render() {
         return (
-            <div>
-                <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="navbar">
-                    <div className="container nav-content">
-                        <Link
-                        exact activeClass="active" 
-                        to="/"
-                        spy={true}
-                        smooth={true}
-                        offset={-70}
-                        duration={500}
-                        className="logo" 
-                        >
-                        <img src="./images/me_chilling.png" alt="me chilling" />
-                        </Link>
-                        <button 
-                        className="navbar-toggler" 
-                        type="button" 
-                        data-bs-toggle="collapse" 
-                        data-bs-target="#navbarSupportedContent" 
-                        aria-controls="navbarSupportedContent" 
-                        aria-expanded="false" 
-                        aria-label="Toggle navigation">
-                        <FontAwesomeIcon icon={faBars} className="hamburger-icon" />
-                        </button>
+            <nav className="navbar navbar-expand-xl navbar-expand-lg bg-dark fixed-top" id="navbar">
+                <Link
+                className="nav-link"
+                exact activeClass="active" 
+                to="/"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={200}>
+                <img className="logo" src="./images/me_chilling.png" alt="me chilling" />
+                <p className="brand nav-brand">Roberto</p>
+                </Link>
+                <button 
+                    className="navbar-toggler" 
+                    type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#navbarSupportedContent" 
+                    aria-controls="navbarSupportedContent" 
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation">
+                    <FontAwesomeIcon icon={faBars} className="hamburger-icon" />
+                </button>
                         <div 
-                        className="collapse navbar-collapse" 
+                        className="collapse navbar-collapse ms-5 me-5" 
                         id="navbarSupportedContent">
                             <ul 
                             className="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -131,9 +129,7 @@ class Navbar extends Component {
                                 </li>
                             </ul>
                         </div>
-                    </div>
                 </nav>                
-            </div>
         )
     }
 }

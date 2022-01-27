@@ -15,14 +15,14 @@ class App extends Component {
   render(){
     return (
       <div> 
-        {/* <Navbar />
+        <Navbar />
         <Home />
         <About />
-        <Services /> */}
+        <Services />
         <Experience />
-        {/* <Portfolio /> */}
+        <Portfolio />
         <Contact />
-        {/* <Footer />  */}
+        <Footer /> 
     </div>
     );
   }

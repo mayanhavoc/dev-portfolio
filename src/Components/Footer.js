@@ -4,14 +4,10 @@ import { Link } from 'react-scroll';
 import {
     TwitterShareButton, 
     LinkedinShareButton,
-    RedditShareButton,
-    WhatsappShareButton,
 } from 'react-share';
 import {
     TwitterIcon, 
     LinkedinIcon,
-    RedditIcon,
-    WhatsappIcon,
 } from 'react-share';
 
 import './Footer.css'
@@ -20,10 +16,9 @@ class Footer extends Component {
     render() {
         return (
             <div className="footer">
-                <div className="container">
                     <div className="row">
-                        <div className="col-lg-4 col-md-6 col-sm-6">
-                            <div className="d-flex flex-column justify-content-center align-items-around">
+                        <div className="col-lg-3 col-md-6 col">
+                            <div className="container contact-info">
                                 <div>
                                     <span>Sacramento, CA</span>    
                                 </div>    
@@ -31,11 +26,11 @@ class Footer extends Component {
                                     <span>info@micochango.com</ span>    
                                 </div>    
                             </div>
-                        </div>   
-                        <div className="col-lg-3 col-md-6 col-sm-6">
+                            </div>
+                        <div className="col-lg-6 col-md-6 col">
                             <div className="row">
-                                <div className="col d-flex flex-column justify-content-center">
-                                    <Link className="footer-nav"
+                                <div className="container d-flex flex-column justify-content-center col-lg-4 col">
+                                    <Link
                                     href="#"
                                     to="home"
                                     smooth={true}
@@ -54,20 +49,20 @@ class Footer extends Component {
                                     >Services
                                     </Link>    
                                 </div>    
-                                <div className="col d-flex flex-column justify-content-center">
+                                <div className="footer-nav container d-flex flex-column justify-content-center col-lg-4 col">
                                     <Link className="footer-nav"
                                     href="#"
                                     to="experience"
                                     smooth={true}
                                     >Experience
                                     </Link>    
-                                    <Link className="footer-nav"
+                                    <Link 
                                     href="#"
                                     to="portfolio"
                                     smooth={true}
                                     >Portfolio
                                     </Link>    
-                                    <Link className="footer-nav"
+                                    <Link 
                                     href="#"
                                     to="contact"
                                     smooth={true}
@@ -76,10 +71,9 @@ class Footer extends Component {
                                 </div>    
                             </div>    
                         </div>
-                        <div className="col-lg-5 col-md-12 col-sm-6 mt-2">
-                            <div className="d-flex justify-content-center">
-                                <div className="row">
-                                    <div className="d-flex icons col-6">
+                        <div className="col-lg-3 col-md-6 col-sm">
+                                <div className="row contact-info">
+                                    <div className="container d-flex justify-content-center icons col">
                                     <TwitterShareButton
                                         url={"www.micochango.com"}
                                         title={"Roberto M, Full Stack Web Dev"}
@@ -100,31 +94,11 @@ class Footer extends Component {
                                         className="mx-3 icon"
                                         ></LinkedinIcon>
                                     </LinkedinShareButton>
-                                </div>
-                                <div className="d-flex icons col-6">
-                                    <RedditShareButton
-                                    url={"www.micochango.com"}
-                                    title={"Roberto M, Full Stack Web Dev"}>
-                                        <RedditIcon
-                                        round={true}
-                                        className="mx-3 icon"
-                                        ></RedditIcon>
-                                    </RedditShareButton>
-                                    <WhatsappShareButton
-                                    url={"www.micochango.com"}
-                                    title={"Roberto M, Full Stack Web Dev"}
-                                    >
-                                        <WhatsappIcon
-                                        round={true}
-                                        className="mx-3 icon"
-                                        ></WhatsappIcon>
-                                    </WhatsappShareButton>
+                                   
                                 </div>
                                 </div>
                             </div>    
-                        </div> 
-                    </div>    
-                </div>    
+                        </div>    
             </div>                
         )
     }

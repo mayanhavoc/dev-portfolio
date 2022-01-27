@@ -37,16 +37,16 @@ const Contact = () => {
     };
 
     return (
-        <div className="Contact component-wrapper d-flex flex-column justify-content-center align-items-center">
-            <h2 className="section-heading highlight">Contact me</h2>
+        <div className="Contact">
+            <h2 className="section-heading highlight sub-heading py-5">Contact me</h2>
             <div className="text-center">
-                <p>Please fill out the form and write a short description of your project. I'll get back to you assoon     as possible.</p>
+                <p>Please fill out the form. I'll get back to you as soon as possible.</p>
                 <span className="success-message">{successMessage}</span>
             </div>
             <div className="container">
-                <form onSubmit={handleSubmit(onSubmit)}>  
-                    <div className="row">
-                        <div className="col-md-6 col-xs-12 d-flex flex-column justify-content-center">
+                <form className="row d-flex justify-content-center" onSubmit={handleSubmit(onSubmit)}>  
+                    {/* <div className="row mx-auto"> */}
+                        <div className="col-lg-4 col-md-4 col-sm">
                             <input
                             id="name" 
                             type="text" 
@@ -64,24 +64,6 @@ const Contact = () => {
                             />
                             <span className="error-message">
                             {errors.name?.type === 'required' && "This field is required."}
-                            </span>
-                            <input 
-                            id="phone"
-                            type="text" 
-                            className="form-control"
-                            placeholder="Phone number"
-                            name="phone"
-                            {
-                                ...register("phone", {
-                                    required: true,
-                                    maxLength: {
-                                        value: 20,
-                                    }
-                                })
-                            }
-                            />
-                            <span className="error-message">
-                            {errors.phone?.type === 'required' && "This field is required."}
                             </span>
                             <input 
                             id="email"
@@ -121,7 +103,7 @@ const Contact = () => {
                             {errors.subject?.type === 'required' && "This field is required."}
                         </span>
                         </div>
-                        <div className="col-md-6 col-xs-12 d-flex flex-column">
+                        <div className="col-lg-4 col-md-6 col-sm">
                             <div>
                                 <textarea 
                                 id="description"
@@ -142,20 +124,16 @@ const Contact = () => {
                                 {errors.description?.type === 'required' && "This field is required."}
                                 </span>
                             </div>
-                        </div>
-                        <div className="container p-0 d-flex px-2 justify-content-end">
                             <button 
-                            className="btn contact-btn g-recaptcha"
-                            data-sitekey="reCAPTCHA_site_key"
-                            data-callback = "onSubmit"
-                            data-action="submit" 
+                            className="btn contact-btn brand"
+                            // data-sitekey="reCAPTCHA_site_key"
+                            // data-callback = "onSubmit"
+                            // data-action="submit" 
                             id="contact-submit" 
-                            type="submit"
-                            
-                            >
+                            type="submit">
                             Submit</button>
                         </div>
-                    </div>
+                    {/* </div> */}
                 </form>  
             </div>              
         </div>

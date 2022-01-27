@@ -100,54 +100,50 @@ class Portfolio extends Component {
    
     render() {
         return (
-            <div className="Portfolio component-wrapper d-flex flex-column justify-content-center align-items-center">
-                <h2 className="sub-heading py-5">Portfolio</h2>
-                <div className="container">
-                    <div className="row image-box-wrapper justify-content-center">
-                       <div className="col-lg-4 portfolio-image-box" onClick={this.openDiscover}>
+            <div className="Portfolio">
+                <h2 className="section-heading sub-heading py-5 brand">Portfolio</h2>
+                    <div className="row container justify-content-center align-items-center">
+                       <div className="col-lg-3 portfolio-image-box" onClick={this.openDiscover}>
                             <p>Turkeys of Sacramento</p>
                             <img className="portfolio-image" src="./images/tos_screenshot.png" alt="TurkeysofSacramento   game" />
                             <div className="overflow"></div>
                             
                        </div>
-                    </div>
-                    <div className="row image-box-wrapper justify-content-center">
-                        <div className="col-lg-8 portfolio-image-box" onClick={this.openDiscover}>
+                        <div className="col-lg-4 portfolio-image-box" onClick={this.openDiscover}>
                             <p>Discover Guatemala</p>
                             <img className="portfolio-image" src="./images/discover_guatemala_desktop.png"alt="Discover    Guatemala project" />
                             <div className="overflow"></div>
                             
                         </div>     
-                        <div className="col-sm-12 col-lg-3 portfolio-image-box mobile">
+                        <div className="col-sm col-lg-3 portfolio-image-box mobile">
                             <p>Mobile</p>
                             <img className="portfolio-image" src="./images/discover_guatemala_mobile.png"alt="Discover  Guatemala project" />
                             <div className="overflow"></div>
                         </div>     
-                       <div className="col-12 col-sm-12 col-lg-3 portfolio-image-box mobile">
+                       <div className="col-lg-3 col-md-6 col-sm  portfolio-image-box mobile">
                             <p>Recipe Finder <i className="fas fa-utensils"></i></p>
                             <img className="portfolio-image" src="./images/recipe_finder_mobile.png" alt="Recipe finder"/>
                             <div className="overflow"></div>
                             
                        </div>
-                       <div className="col-12 col-lg-8 portfolio-image-box" onClick={this.openRecipe}>
+                       <div className="col-lg-3 col-md-6 col-sm portfolio-image-box" onClick={this.openRecipe}>
                            <p>Desktop view</p>
                             <img className="portfolio-image" src="./images/recipe_finder_desktop.png" alt="Recipefinder"/>
                             <div className="overflow"></div>
                        </div>
-                       <div className="col-12 col-lg-8 portfolio-image-box" onClick={this.openExplorer}>
+                       <div className="col-lg-3 col-md-6 col-sm portfolio-image-box" onClick={this.openExplorer}>
                             <p>Github explorer</p>
                             <img className="portfolio-image img-fluid" src="./images/github_explorer_desktop.png"   alt="Githubexplorer"   />
                             <div className="overflow"></div>
                             
                        </div>
-                       <div className="col-12 col-sm-12 col-lg-3 portfolio-image-box mobile">
+                       <div className="col-lg-3 col-md-6 col-sm portfolio-image-box mobile">
                             <p>Mobile</p>
                             <img className="portfolio-image img-fluid" src="./images/github_explorer_mobile.png"   alt="Githubexplorer"   />
                             <div className="overflow"></div>
                        </div>
                     </div>
-                </div>   
-            </div>                
+               </div>                 
         )
     }
 }

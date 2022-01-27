@@ -10,12 +10,12 @@ import './Services.css';
 class Services extends Component {
     render() {
         return (
-            <div className="Services component-wrapper d-flex justify-content-center align-items-center flex-column">
-                <h2 className="sub-heading">Services</h2>
-                <div className="py-5">
-                    <div className="container">
-                        <div className="row d-flex align-items-center">
-                            <div className="col-lg-3 col-md-6 col-sm-6">
+            <div className="Services">
+                <h2 className="section-heading sub-heading py-5 brand">Services</h2>
+                {/* <div className="py-5"> */}
+                    {/* <div className="container"> */}
+                        <div className="row container">
+                            <div className="col-lg-3 col-md-6 col-sm col-xs">
                                 <div className="box">
                                     <div className="circle">
                                         <FontAwesomeIcon 
@@ -24,7 +24,7 @@ class Services extends Component {
                                         size="2x" />                                   
                                     </div>
                                     <h3 className="secondary-heading">Web Design</h3>
-                                    <p className="">I use a six step framework to break projects down into distinct phases in order to monitor progress and results along the way.</p>
+                                    <p className="secondary-text">I use a six step framework to break projects down into distinct phases in order to monitor progress and results along the way.</p>
                                 </div>
                             </div>
                             <div className="col-lg-3 col-md-6 col-sm-6">
@@ -36,7 +36,7 @@ class Services extends Component {
                                     size="2x"/> 
                                     </div>
                                     <h3 className="secondary-heading">Web Development</h3>
-                                    <p>Heavy emphasis on adherence to the agreed technical and design specifications and perform regular functional tests to correct any problems.</p>
+                                    <p>I emphasize adherence to the agreed technical and design specifications and perform regular functional tests to correct any problems.</p>
                                 </div>
                             </div>
                             <div className="col-lg-3 col-md-6 col-sm-6">
@@ -69,8 +69,8 @@ class Services extends Component {
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>                
+                // </div>
+            // </div>                
         )
     }
 }
