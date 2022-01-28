@@ -6,7 +6,7 @@ import Home from './Components/Home';
 import About from './Components/About';
 import Services from './Components/Services';
 import Experience from './Components/Experience';
-import Portfolio from './Components/Portfolio';
+// import Portfolio from './Components/Portfolio';
 import Contact from './Components/Contact';
 import Footer from './Components/Footer';
 
@@ -20,7 +20,7 @@ class App extends Component {
         <About />
         <Services />
         <Experience />
-        <Portfolio />
+        {/* <Portfolio /> */}
         <Contact />
         <Footer /> 
     </div>

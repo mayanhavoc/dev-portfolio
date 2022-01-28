@@ -7,28 +7,28 @@ import './Portfolio.css';
 class Portfolio extends Component {
     // Discover Guatemala
     openDiscover() {
-        const content = (
-            <Popup trigger={<button className="button">Open</button>} modal>
-                {close => (
-                    <Element className="modal">
-                        <button className="close" onClick={close}>
-                            &times;
-                        </button>
-                        <div className="header">Discover Guatemala</div>
-                        <div className="content">
-                            <a href="https://github.com/mayanhavoc/yelp_camp">
-                            <img className="portfolio-image-popupbox" src="./images/discover_guatemala.png"     alt="Discover   Guatemala website" /></a>
-                            <p>A platform to crowdsource lodgings. Built with NodeJS, Express and Mongo.</p>
-                            <b>GitHub:</b> 
-                            <a 
-                            className="hyper-link" 
-                            href="https://github.com/mayanhavoc/yelp_camp"     
-                            onClick={() => window.open("https://github.com/mayanhavoc/yelp_camp")}>https:// github.com/ mayanhavoc/yelp_camp</a>
-                        </div>
-                    </Element>
-                )}
-            </Popup>
-        );
+        // const content = (
+        //     <Popup trigger={<button className="button">Open</button>} modal>
+        //         {close => (
+        //             <Element className="modal">
+        //                 <button className="close" onClick={close}>
+        //                     &times;
+        //                 </button>
+        //                 <div className="header">Discover Guatemala</div>
+        //                 <div className="content">
+        //                     <a href="https://github.com/mayanhavoc/yelp_camp">
+        //                     <img className="portfolio-image-popupbox" src="./images/discover_guatemala.png"     alt="Discover   Guatemala website" /></a>
+        //                     <p>A platform to crowdsource lodgings. Built with NodeJS, Express and Mongo.</p>
+        //                     <b>GitHub:</b> 
+        //                     <a 
+        //                     className="hyper-link" 
+        //                     href="https://github.com/mayanhavoc/yelp_camp"     
+        //                     onClick={() => window.open("https://github.com/mayanhavoc/yelp_camp")}>https:// github.com/ mayanhavoc/yelp_camp</a>
+        //                 </div>
+        //             </Element>
+        //         )}
+        //     </Popup>
+        // );
     }
 
     // // Turkeys of Sacramento
