@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import VideoEmbed from './VideoEmbed';
+import { Element } from 'react-scroll';
 import './Experience.css';
 
 
 class Experience extends Component {
     render() {
         return (
-            <div className="Experience container">
+            <Element className="Experience container">
                 <h2 className="section-heading sub-heading py-5 brand">Experience</h2>
                 <div className="row mx-auto">
                     {/*  */}
@@ -95,7 +96,7 @@ class Experience extends Component {
                         </div>
                     </div>
                 </div>
-            </div>
+            </Element>
         )
     }
 }

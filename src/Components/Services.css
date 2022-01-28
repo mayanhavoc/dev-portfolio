@@ -38,6 +38,7 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: top;
+	min-height: 100%;
 	align-items: center;
 	border-bottom: 0.125rem solid var(--primary-yellow);
 	padding: 0.625rem;
@@ -72,12 +73,14 @@
 	.Services p {
 		font-size: 0.75rem;
 	}
+	.secondary-heading {
+		font-size: 0.8rem;
+	}
 }
 
 @media screen and (min-width: 360px) and (max-width: 819px) {
 	.Services .box {
-		height: 14rem;
-		margin: 0.325rem;
+		margin: 1.325rem;
 	}
 	.secondary-heading {
 		padding-top: 0.7rem;
@@ -93,5 +96,17 @@
 	}
 	.col-md-6 {
 		padding-bottom: 1rem;
+	}
+}
+
+@media screen and (min-width: 821px) and (max-width: 1023px) {
+	.secondary-heading {
+		font-size: 1.5rem;
+	}
+}
+
+@media screen and (min-width: 1024px) and (max-width: 3200px) {
+	.secondary-heading {
+		font-size: 1rem;
 	}
 }

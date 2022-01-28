@@ -71,7 +71,7 @@
 }
 
 .contact-btn:before {
-	content: 'Thanks!';
+	content: "'click'";
 	position: absolute;
 	left: 0;
 	top: 0;

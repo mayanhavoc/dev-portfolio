@@ -1,24 +1,31 @@
-.footer {
+.Footer {
+	display: flex;
+	justify-content: center;
 	background: var(--primary-text);
-	color: var(--primary-white);
 	padding: 3rem;
-	font-size: 1.5rem;
+	font-family: 'Rubik Mono One', sans-serif;
+	line-height: 200%;
 }
 
-.footer a {
+.Footer a {
 	cursor: pointer;
-	color: var(--primary-white) !important;
+	color: var(--primary-yellow) !important;
+	text-shadow: 1px 1px 1px var(--primary-red);
 }
 
-.footer a:hover {
+.Footer a:hover {
 	color: var(--primary-text);
 }
 
-.footer p {
+.Footer p {
 	margin-bottom: 0;
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 0px) and (max-width: 767px) {
+	.Footer-wrapper {
+		flex-direction: column;
+	}
+
 	.contact-info {
 		padding: 1rem 0;
 	}

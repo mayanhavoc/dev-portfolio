@@ -1,13 +1,42 @@
 import React, { Component } from 'react';
 import Particles from "react-tsparticles";
 import Typed from 'react-typed';
-import { NavLink } from 'react-router-dom';
+import { Link, Element, Events, animateScroll as scroll, scroller } from 'react-scroll';
 import './Home.css';
 
 class Home extends Component {
+    constructor(props){
+        super(props);
+        this.scrollToTop = this.scrollToTop.bind(this);
+    }
+    componentDidMount() {
+
+        Events.scrollEvent.register('begin', function () {
+          console.log("begin", arguments);
+        });
+    
+        Events.scrollEvent.register('end', function () {
+          console.log("end", arguments);
+        });
+    
+      }
+      scrollToTop() {
+        scroll.scrollToTop();
+      }
+      scrollTo() {
+        scroller.scrollTo('scroll-to-element', {
+          duration: 800,
+          delay: 0,
+          smooth: 'easeInOutQuart'
+        })
+      }
+      componentWillUnmount() {
+        Events.scrollEvent.remove('begin');
+        Events.scrollEvent.remove('end');
+      }
     render() {
         return (
-            <div className="/">
+            <Element className="/">
             <Particles
                 id="tsparticles"
                 options={{
@@ -92,15 +121,20 @@ class Home extends Component {
                         typeSpeed={40}
                         backSpeed={60}
                     />
-                    <NavLink 
-                    activeClassName="link-active"
-                    to="contact"
+                    <Link 
+                    activeClass="active"
+                    href="#"
+                    to="Contact"
                     className="Home-btn"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
                     >Contact me
-                    </NavLink>
+                    </Link>
                 </section>
             </section>
-            </div>
+            </Element>
         )
     }
 }

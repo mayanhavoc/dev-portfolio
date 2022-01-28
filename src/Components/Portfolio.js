@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Popup from 'reactjs-popup';
+import { Element } from 'react-scroll';
 import 'reactjs-popup/dist/index.css';
 import './Portfolio.css';
 
@@ -9,7 +10,7 @@ class Portfolio extends Component {
         const content = (
             <Popup trigger={<button className="button">Open</button>} modal>
                 {close => (
-                    <div className="modal">
+                    <Element className="modal">
                         <button className="close" onClick={close}>
                             &times;
                         </button>
@@ -24,7 +25,7 @@ class Portfolio extends Component {
                             href="https://github.com/mayanhavoc/yelp_camp"     
                             onClick={() => window.open("https://github.com/mayanhavoc/yelp_camp")}>https:// github.com/ mayanhavoc/yelp_camp</a>
                         </div>
-                    </div>
+                    </Element>
                 )}
             </Popup>
         );
@@ -100,7 +101,7 @@ class Portfolio extends Component {
    
     render() {
         return (
-            <div className="Portfolio">
+            <Element className="Portfolio">
                 <h2 className="section-heading sub-heading py-5 brand">Portfolio</h2>
                     <div className="row container justify-content-center align-items-center">
                        <div className="col-lg-3 portfolio-image-box" onClick={this.openDiscover}>
@@ -143,7 +144,7 @@ class Portfolio extends Component {
                             <div className="overflow"></div>
                        </div>
                     </div>
-               </div>                 
+               </Element>                 
         )
     }
 }

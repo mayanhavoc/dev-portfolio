@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-scroll';
+import { Link, Events, animateScroll as scroll, scroller } from 'react-scroll'
 
 import {
     TwitterShareButton, 
@@ -13,95 +13,227 @@ import {
 import './Footer.css'
 
 class Footer extends Component {
+    constructor(props){
+        super(props);
+        this.scrollToTop = this.scrollToTop.bind(this);
+    }
+    componentDidMount() {
+
+        Events.scrollEvent.register('begin', function () {
+          console.log("begin", arguments);
+        });
+    
+        Events.scrollEvent.register('end', function () {
+          console.log("end", arguments);
+        });
+    
+      }
+      scrollToTop() {
+        scroll.scrollToTop();
+      }
+      scrollTo() {
+        scroller.scrollTo('scroll-to-element', {
+          duration: 800,
+          delay: 0,
+          smooth: 'easeInOutQuart'
+        })
+      }
+      componentWillUnmount() {
+        Events.scrollEvent.remove('begin');
+        Events.scrollEvent.remove('end');
+      }
     render() {
         return (
-            <div className="footer">
-                    <div className="row">
-                        <div className="col-lg-3 col-md-6 col">
-                            <div className="container contact-info">
-                                <div>
-                                    <span>Sacramento, CA</span>    
-                                </div>    
-                                <div>
-                                    <span>info@micochango.com</ span>    
-                                </div>    
-                            </div>
-                            </div>
-                        <div className="col-lg-6 col-md-6 col">
-                            <div className="row">
-                                <div className="container d-flex flex-column justify-content-center col-lg-4 col">
-                                    <Link
-                                    href="#"
-                                    to="home"
-                                    smooth={true}
-                                    >Home
-                                    </Link>     
-                                    <Link className="footer-nav"
-                                    href="#"
-                                    to="about"
-                                    smooth={true}
-                                    >About
-                                    </Link>    
-                                    <Link className="footer-nav"
-                                    href="#"
-                                    to="Services"
-                                    smooth={true}
-                                    >Services
-                                    </Link>    
-                                </div>    
-                                <div className="footer-nav container d-flex flex-column justify-content-center col-lg-4 col">
-                                    <Link className="footer-nav"
-                                    href="#"
-                                    to="experience"
-                                    smooth={true}
-                                    >Experience
-                                    </Link>    
-                                    <Link 
-                                    href="#"
-                                    to="portfolio"
-                                    smooth={true}
-                                    >Portfolio
-                                    </Link>    
-                                    <Link 
-                                    href="#"
-                                    to="contact"
-                                    smooth={true}
-                                    >Contact
-                                    </Link>    
-                                </div>    
-                            </div>    
-                        </div>
-                        <div className="col-lg-3 col-md-6 col-sm">
-                                <div className="row contact-info">
-                                    <div className="container d-flex justify-content-center icons col">
-                                    <TwitterShareButton
-                                        url={"www.micochango.com"}
-                                        title={"Roberto M, Full Stack Web Dev"}
-                                        quote={"Full Stack Web Developer"}
-                                        hashtags={["FullStackDev"]}
-                                    >
-                                        <TwitterIcon
-                                        round={true} 
-                                        className="mx-3 icon"></TwitterIcon>    
-                                    </TwitterShareButton>  
-                                    <LinkedinShareButton
-                                        url={"www.micochango.com"}
-                                        title={"Roberto M, Full Stack Web Dev"}
-                                        summary={"Experienced, driven and effective software developer. "}
-                                    >
-                                        <LinkedinIcon
-                                        round={true}
-                                        className="mx-3 icon"
-                                        ></LinkedinIcon>
-                                    </LinkedinShareButton>
-                                   
-                                </div>
-                                </div>
-                            </div>    
-                        </div>    
+            <div className="Footer">
+                <div className="Footer-wrapper container d-flex">
+                    <div className="container d-flex flex-column">
+                        <Link
+                            className='mt-1'
+                            activeClass='active'
+                            spy={true}
+                            smooth={true}
+                            duration={500}
+                            href="#"
+                            to="Home"
+                            >Home
+                        </Link>     
+                        <Link 
+                            className="mt-1"
+                            href="#"
+                            to="About"
+                            activeClass='active'
+                            spy={true}
+                            smooth={true}
+                            duration={500}
+                            >About
+                        </Link>
+                    </div>
+                    <div className="container d-flex flex-column">
+                        <Link 
+                            className="mt-1"
+                            href="#"
+                            to="Services"
+                            activeClass='active'
+                            spy={true}
+                            smooth={true}
+                            duration={500}
+                            >Services
+                        </Link>    
+                        <Link 
+                            className='mt-1'
+                            href="#"
+                            to="Experience"
+                            activeClass='active'
+                            spy={true}
+                            smooth={true}
+                            duration={500}
+                            >Experience
+                        </Link> 
+                    </div>
+                    <div className="container d-flex flex-column">
+                        <Link
+                            className='mt-1' 
+                            href="#"
+                            to="Portfolio"
+                            activeClass='active'
+                            spy={true}
+                            smooth={true}
+                            duration={500}
+                            >Portfolio
+                        </Link>    
+                        <Link
+                            className='mt-1' 
+                            href="#"
+                            to="Contact"
+                            activeClass='active'
+                            spy={true}
+                            smooth={true}
+                            duration={500}
+                            offset={-70}
+                            >Contact
+                        </Link>  
+                    </div>
+                    <div className="container d-flex justify-content-center icons">
+                        <TwitterShareButton
+                            url={"www.micochango.com"}
+                            title={"Roberto M, Full Stack Web Dev"}
+                            quote={"Full Stack Web Developer"}
+                            hashtags={["FullStackDev"]}>
+                            <TwitterIcon
+                                round={true} 
+                                className="mx-3 icon">
+                            </TwitterIcon>    
+                        </TwitterShareButton>  
+                        <LinkedinShareButton
+                            url={"www.micochango.com"}
+                            title={"Roberto M, Full Stack Web Dev"}
+                            summary={"Experienced, driven and effective software developer. "}>
+                                <LinkedinIcon
+                                round={true}
+                                className="mx-3 icon">
+                                </LinkedinIcon>
+                        </LinkedinShareButton>
+                    </div>
+                </div>    
             </div>                
         )
     }
 }
 
 export default Footer
+
+
+{/* <div className="row">
+<div className="col col-md-6 col-lg-9"> */}
+    {/* <div className="row"> */}
+        {/* <div className="footer-nav container d-flex flex-column justify-content-center col-lg-2 col">
+            <Link
+            activeClass='active'
+            spy={true}
+            smooth={true}
+            duration={500}
+            href="#"
+            to="Home"
+            >Home
+            </Link>     
+            <Link className="footer-nav"
+            href="#"
+            to="About"
+            activeClass='active'
+            spy={true}
+            smooth={true}
+            duration={500}
+            >About
+            </Link>
+        </div>
+        <div className="footer-nav container d-flex flex-column justify-content-center col-lg-2 col">    
+            <Link className="footer-nav"
+            href="#"
+            to="Services"
+            activeClass='active'
+            spy={true}
+            smooth={true}
+            duration={500}
+            >Services
+            </Link>    
+            <Link className="footer-nav"
+            href="#"
+            to="Experience"
+            activeClass='active'
+            spy={true}
+            smooth={true}
+            duration={500}
+            >Experience
+            </Link>    
+        </div>    
+        <div className="footer-nav container d-flex flex-column justify-content-center col-lg-2 col">
+            <Link 
+            href="#"
+            to="Portfolio"
+            activeClass='active'
+            spy={true}
+            smooth={true}
+            duration={500}
+            >Portfolio
+            </Link>    
+            <Link 
+            href="#"
+            to="Contact"
+            activeClass='active'
+            spy={true}
+            smooth={true}
+            duration={500}
+            offset={-70}
+            >Contact
+            </Link>    
+        </div>    
+    {/* </div>     */}
+// </div>
+// <div className="col-lg-3 col-md-6 col-sm">
+//         <div className="row contact-info">
+//             <div className="container d-flex justify-content-center icons col">
+//             <TwitterShareButton
+//                 url={"www.micochango.com"}
+//                 title={"Roberto M, Full Stack Web Dev"}
+//                 quote={"Full Stack Web Developer"}
+//                 hashtags={["FullStackDev"]}
+//             >
+//                 <TwitterIcon
+//                 round={true} 
+//                 className="mx-3 icon"></TwitterIcon>    
+//             </TwitterShareButton>  
+//             <LinkedinShareButton
+//                 url={"www.micochango.com"}
+//                 title={"Roberto M, Full Stack Web Dev"}
+//                 summary={"Experienced, driven and effective software developer. "}
+//             >
+//                 <LinkedinIcon
+//                 round={true}
+//                 className="mx-3 icon"
+//                 ></LinkedinIcon>
+//             </LinkedinShareButton>
+           
+//         </div>
+//         </div>
+//     </div>    
+// </div>     

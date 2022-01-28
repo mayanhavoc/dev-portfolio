@@ -45,7 +45,7 @@ const Contact = () => {
             </div>
             <div className="container">
                 <form className="row d-flex justify-content-center" onSubmit={handleSubmit(onSubmit)}>  
-                    {/* <div className="row mx-auto"> */}
+                   
                         <div className="col-lg-4 col-md-4 col-sm">
                             <input
                             id="name" 
@@ -126,14 +126,13 @@ const Contact = () => {
                             </div>
                             <button 
                             className="btn contact-btn brand"
-                            // data-sitekey="reCAPTCHA_site_key"
-                            // data-callback = "onSubmit"
-                            // data-action="submit" 
+                            data-sitekey="reCAPTCHA_site_key"
+                            data-callback ="onSubmit"
+                            data-action="submit" 
                             id="contact-submit" 
                             type="submit">
                             Submit</button>
                         </div>
-                    {/* </div> */}
                 </form>  
             </div>              
         </div>
