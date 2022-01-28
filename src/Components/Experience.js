@@ -15,7 +15,7 @@ class Experience extends Component {
                         {/* <div className="marker"></div> */}
                         <div className="timeline-content">
                             <h3 className="year">2012-2016</h3>
-                            <h3 className="brand sub-heading">Centro Municipal de Emprendimiento</h3>
+                            <h3 className="brand sub-heading experience-heading">Centro Municipal de Emprendimiento</h3>
                             <span className="job-title">Program Director</span>
                             <p className="job-description">In 2012 I founded a startup incubator in my home town of Guatemala</p>
                             <VideoEmbed
@@ -31,7 +31,7 @@ class Experience extends Component {
                         {/* <div className="marker"></div> */}
                         <div className="timeline-content">
                             <h3 className="year">2013-2015</h3>
-                            <h3 className="brand sub-heading">Aerostatika</h3>
+                            <h3 className="brand sub-heading experience-heading">Aerostatika</h3>
                             <span className="job-title">Operations Coordinator</span>
                             <p className="job-description">I was in charge of operations for the first ever hot air ballon company in Guatemala.</p>
                             <VideoEmbed
@@ -49,7 +49,7 @@ class Experience extends Component {
                         {/* <div className="marker"></div> */}
                         <div className="timeline-content">
                             <h3 className="year">2013-2014</h3>
-                            <h3 className="sub-heading brand">Espacios Extremos</h3>
+                            <h3 className="sub-heading brand experience-heading">Espacios Extremos</h3>
                             <span className="job-title">Operations Director</span>
                             <p className="job-description">Espacios Extremos was an initiative of Guatemala City's local government to promote safe spaces for  marginalized youths to practice urban sports.</p>
                             <VideoEmbed 
@@ -66,7 +66,7 @@ class Experience extends Component {
                         {/* <div className="marker"></div> */}
                         <div className="timeline-content">
                             <h3 className="year">2013</h3>
-                            <h3 className="sub-heading brand">Bacilongas</h3>
+                            <h3 className="sub-heading brand experience-heading">Bacilongas</h3>
                             <span className="job-title">Co-founder</span>
                             <p className="job-description">Bacilongas is an Etsy style platform for Latinamerica.</p>
                             <VideoEmbed 
@@ -84,7 +84,7 @@ class Experience extends Component {
                         {/* <div className="marker"></div> */}
                         <div className="timeline-content">
                             <h3 className="year">2012</h3>
-                            <h3 className="sub-heading brand">BlogJob!®</h3>
+                            <h3 className="sub-heading brand experience-heading">BlogJob!®</h3>
                             <span className="job-title">Producer, Director</span>
                             <p className="job-description">BlogJob!® was a opinion blog platform.</p>
                             <VideoEmbed
