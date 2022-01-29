@@ -20,8 +20,8 @@ class Experience extends Component {
                             <p className="job-description">In 2012 I founded a startup incubator in my home town of Guatemala</p>
                             <VideoEmbed
                             embedId="CLEZCx5qtYc"
+                            imgSrc="./images/cme_logo.png"
                             autoplay="0"
-                            preload="none"
                             />
                             <p>Working with small businesses and entrepreneurs in Guatemala made me realize just how       important technology   is    for business. Over the course of 4 years, I helped entrepreneurs implement     technology into their    businesses to     build competitive advantages with very few resources.</p>
                         </div>
