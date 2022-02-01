@@ -1,15 +1,27 @@
 .Portfolio {
-	position: relative;
-	min-height: 100vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	padding: 1rem 0;
-	background: var(--primary-light-grey);
+	padding: 0.7rem;
+	background: var(--primary-dark-grey);
 }
 
-.Portfolio-image {
+.Portfolio-content {
+	width: 95%;
+	padding: 0 0.9375rem;
+	color: #fff !important;
+	/* color: var(--primary-text);
+	direction: ltr; */
+}
+
+.project-description {
+	padding: 0.5rem 0;
+	font-size: 0.9rem;
+}
+
+.giphy-embed {
+	border-radius: 15px;
+	box-shadow: 1px 1px 5px #000;
+}
+
+/* .Portfolio-image {
 	max-width: 10rem;
 	border-radius: 1rem;
 	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
@@ -41,7 +53,7 @@
 	background-color: rgba(0, 0, 0, 0.85);
 	opacity: 0;
 	background: url(data:;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAABl0RVh0U29mdHdhcmUAUGFpbnQuTkVUIHYzLjUuNUmK/OAAAAATSURBVBhXY2RgYNgHxGAAYuwDAA78AjwwRoQYAAAAAElFTkSuQmCC)
-		repeat scroll transparent\9; /* ie fallback png background image */
+		repeat scroll transparent\9; /* ie fallback png background image 
 	z-index: 9999;
 	color: white;
 	border: none;
@@ -96,7 +108,7 @@
 }
 
 /*------------ MEDIA ------------------*/
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
 	.Portfolio-image-popupbox {
 		width: 100%;
 	}
@@ -118,4 +130,4 @@
 	.Portfolio-image-popupbox {
 		width: 30%;
 	}
-}
+}  */

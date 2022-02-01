@@ -1,70 +1,66 @@
-import React, { Component } from "react";
-// FONTAWESOME IMPORTS
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearchPlus } from "@fortawesome/free-solid-svg-icons";
-// REACT POPUPBOX
-import { PopupboxManager, PopupboxContainer } from "react-popupbox";
+import React, { Component } from 'react';
 import { Element } from 'react-scroll';
-import "react-popupbox/dist/react-popupbox.css";
-import "./Portfolio.css"
+import './Portfolio.css';
+
 
 class Portfolio extends Component {
-    openAerostatika(){
-        const content = (
-            <div className="container d-flex flex-column">
-                <p>Built on vanilla JS, HTML, CSS</p>
-                <div className="container d-flex justify-content-center">
-                    <a className="btn btn-primary btn-sm mx-2" href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-size">Live site</a>
-                    <a className="btn btn-primary btn-sm mx-2" href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-size">Remote repository</a>
-                </div>
-          </div>
-        )
-        PopupboxManager.open({ content })
-    }
     render() {
         return (
-          <Element className="Portfolio">
-              <h2 className="section-heading sub-heading py-5 brand">Portfolio</h2>
-              <div className="row mx-auto">
-              <div className="col col-md-6 col-lg-4">
-                      <div className="card">
-                          <div className="card-body">
-                                <img src="./images/bacilongas_logo.png"  alt="" className="card-img-top mx-auto d-block" />
-                              <h5 className="card-title brand text-center py-3">
-                                  Cell Culture Calculator
-                              </h5>
-                              <button className="btn btn-primary" onClick={this.openAerostatika}>Click!</button>
-                          </div>
-                      </div>
-                  </div>
-                  <div className="col col-md-6 col-lg-4">
-                      <div className="card">
-                        <div className="card-body">
-                        <img src="./images/bacilongas_logo.png"  alt="" className="card-img-top mx-auto d-block" />
-                        <h5 className="card-title brand text-center py-3">
-                            Frogger
-                        </h5>
-                        <button className="btn btn-primary" onClick={this.openAerostatika}>Click!</button>
+            <Element className="Portfolio">
+                <h2 className="section-heading sub-heading py-5 brand">Portfolio</h2>
+                <div className="row mx-auto my-5">
+                    <div className="col-lg-6">
+                            <div style={{width:"100%", height:"0", paddingBottom:"52%", position:"relative"}}>
+                                <iframe src="https://giphy.com/embed/jswJw3WHcddZJTrkvd" width="100%" height="100%" style={{position:"absolute"}} frameBorder="0" className="giphy-embed" allowFullScreen>
+                                </iframe>
+                            </div>
+                    </div>
+                    <div className="col-lg-6">
+                        <div className="Portfolio-content">
+                            <h3 className="brand sub-heading experience-heading">Cell Culture Calculator</h3>
+                            <p className="project-description">Researchers use cell calculators in order to plan their experiments. Traditionally, they use excel spreadsheets, but the UI is not necessarily user friendly. It's also difficult to understand. The idea with this cell culture calculator is to give the researcher a 'single finger experience' (think Tinder, Reddit, etc.) to input the values and select the options they need to model and the app performs the calculations and shows its process in order to facilitate the validation of the results.</p>
+                            <a href="https://github.com/mayanhavoc/cell_culture_calculator" className="btn btn-success me-2">Github repository</a>
+                            <a href="https://cell-culture-calculator.netlify.app/" className="btn btn-primary">Live site</a>
                         </div>
-                      </div>
-                  </div>
-                  <div className="col col-md-6 col-lg-4">
-                      <div className="card text-right">
-                          <div className="card-body">
-                            <img src="./images/bacilongas_logo.png"  alt="" className="card-img-top mx-auto d-block" />
-                            <h5 className="card-title brand text-center py-3">
-                                Discover Guatemala
-                            </h5>
-                            <button className="btn btn-primary" onClick={this.openAerostatika}>Click!</button>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-            <PopupboxContainer className="container w-50 h-50" />
-          </Element>
+                    </div>
+                </div>
+                <div className="row mx-auto my-5">
+                    <div className="col-lg-6">
+                            <div style={{width:"100%", height:"0", paddingBottom:"52%", position:"relative"}}>
+                                <img src="./images/pet-shelter-desktop.png" alt="" className="img-fluid giphy-embed" />
+                                {/* <iframe src="https://giphy.com/embed/jswJw3WHcddZJTrkvd" width="100%" height="100%" style={{position:"absolute"}} frameBorder="0" className="giphy-embed" allowFullScreen>
+                                </iframe> */}
+                            </div>
+                    </div>
+                    <div className="col-lg-6">
+                        <div className="Portfolio-content">
+                            <h3 className="brand sub-heading experience-heading">Pet Shelter</h3>
+                            <p className="project-description">Pet adoption websites don't always have the best UI. I'm studying how to make a simple, light, easy to use template specifically design to make it easier for adoption agencies to create their own profile and register their pets for adoption.</p>
+                            <a href="https://github.com/mayanhavoc/pet-shelter" className="btn btn-success me-2">Github repository</a>
+                            <a href="https://desolate-escarpment-13593.herokuapp.com/" className="btn btn-primary">Live site</a>
+                        </div>
+                    </div>
+                </div>
+                <div className="row mx-auto my-5">
+                    <div className="col-lg-6">
+                            <div style={{width:"100%", height:"0", paddingBottom:"52%", position:"relative"}}>
+                            <img src="./images/tos_desktop.png" alt="" className="img-fluid giphy-embed" />
+                                {/* <iframe src="https://giphy.com/embed/jswJw3WHcddZJTrkvd" width="100%" height="100%" style={{position:"absolute"}} frameBorder="0" className="giphy-embed" allowFullScreen>
+                                </iframe> */}
+                            </div>
+                    </div>
+                    <div className="col-lg-6">
+                        <div className="Portfolio-content">
+                            <h3 className="brand sub-heading experience-heading">Turkeys of Sacramento</h3>
+                            <p className="project-description">ToS is set up as 5 different canvases, each with different elements. I created classes for different elements which have width and height properties in relation to the sprite, to the canvas and X and Y properties in relation to the grid. These properties are updated as the sprite moves along the canvas.Finally utilities.js handles the game logic.</p>
+                            <a href="https://turkeys-of-sacramento.netlify.app/" className="btn btn-success me-2">Github repository</a>
+                            <a href="https://desolate-escarpment-13593.herokuapp.com/" className="btn btn-primary">Live site</a>
+                        </div>
+                    </div>
+                </div>
+            </Element>
         )
-      }
+    }
 }
 
 export default Portfolio;
-

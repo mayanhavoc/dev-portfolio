@@ -30,7 +30,6 @@ const YoutubeEmbed = ({ embedId, imgSrc }) => (
 
 YoutubeEmbed.propTypes = {
   embedId: PropTypes.string.isRequired,
-  imgSrc: PropTypes.string.isRequired,
 };
 
 export default YoutubeEmbed;
