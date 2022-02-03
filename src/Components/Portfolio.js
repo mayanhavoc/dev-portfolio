@@ -11,8 +11,9 @@ class Portfolio extends Component {
                 <div className="row mx-auto my-5">
                     <div className="col-lg-6">
                             <div style={{width:"100%", height:"0", paddingBottom:"52%", position:"relative"}}>
-                                <iframe src="https://giphy.com/embed/jswJw3WHcddZJTrkvd" width="100%" height="100%" style={{position:"absolute"}} frameBorder="0" className="giphy-embed" allowFullScreen>
-                                </iframe>
+                                <img src="./images/cell_culture_calculator.png" alt="" className="img-fluid giphy-embed" />
+                                {/* <iframe src="https://giphy.com/embed/jswJw3WHcddZJTrkvd" width="100%" height="100%" style={{position:"absolute"}} frameBorder="0" className="giphy-embed" allowFullScreen>
+                                </iframe> */}
                             </div>
                     </div>
                     <div className="col-lg-6">
