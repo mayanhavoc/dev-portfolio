@@ -87,6 +87,7 @@ class Footer extends Component {
                             spy={true}
                             smooth={true}
                             duration={500}
+                            offset={-70}
                             >Experience
                         </Link> 
                     </div>
@@ -99,6 +100,7 @@ class Footer extends Component {
                             spy={true}
                             smooth={true}
                             duration={500}
+                            offset={-70}
                             >Portfolio
                         </Link>    
                         <Link

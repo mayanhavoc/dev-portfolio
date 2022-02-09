@@ -163,7 +163,7 @@ table {
 	--primary-light-grey: rgb(244, 244, 244);
 	--primary-grey: rgb(152, 152, 157);
 	--primary-dark-grey: rgb(97, 97, 101);
-	--primary-dark: rgb(255, 255, 255, 0);
+	--primary-dark: rgb(0, 0, 0);
 	--primary-text: rgb(17, 46, 81);
 }
 
