@@ -45,8 +45,10 @@ class Navbar extends Component {
                 smooth={true}
                 offset={-70}
                 duration={200}>
-                <img className="logo" src="./images/me_chilling.png" alt="me chilling" />
-                <p className="brand nav-brand">Roberto</p>
+                <picture>
+                  <source srcSet='./images/chilling.jpg' media="(min-width: 1200px)"/>
+                  <img className="logo" src="./images/chilling.webp" alt="Me chillin' like a villain." />
+                </picture>
                 </Link>
                 <button 
                     className="navbar-toggler" 

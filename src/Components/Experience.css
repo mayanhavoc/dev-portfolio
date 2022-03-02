@@ -7,6 +7,11 @@
 	position: relative;
 }
 
+.xp-img {
+	margin: 1em auto;
+	max-width: 150px;
+}
+
 /* .section-heading {
 	text-align: center;
 }
@@ -62,12 +67,9 @@
 	width: 95%;
 	padding: 0 0.9375rem;
 	color: #fff !important;
-	/* color: var(--primary-text);
-	direction: ltr; */
 }
 
 .year {
-	color: #fff !important;
 	/* color: var(--primary-pink); */
 	/* font-weight: 700; */
 	margin: 0;

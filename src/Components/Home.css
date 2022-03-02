@@ -1,5 +1,5 @@
 .Home {
-	background: var(--primary-mint);
+	background: var(--superman-blue);
 }
 
 .Home-main {
@@ -18,17 +18,31 @@
 
 .Home-btn {
 	text-decoration: none !important;
+	background: var(--superman-yellow);
 	border: 2px solid var(--primary-red);
-	border-radius: 15px;
+	color: var(--superman-blue);
+	border-radius: 1rem;
 	text-transform: uppercase;
-	padding: 0.625rem;
-	margin: 2rem 0;
+	padding: 0.25rem;
 	font-weight: 700;
 	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	width: 150px;
+	margin: 1rem auto 0 auto;
 }
 
 .Home-btn:hover {
 	background-color: var(--primary-red) !important;
 	color: var(--primary-white) !important;
 	transition: 0.2s ease-in-out;
+}
+
+.brand-img {
+	margin-top: 5rem;
+	justify-self: center;
+}
+
+.typed {
+	color: var(--primary-white);
+	font-weight: 700;
+	text-transform: uppercase;
 }

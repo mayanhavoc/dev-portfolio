@@ -5,7 +5,8 @@
 	flex-direction: column;
 	justify-content: center;
 	padding: 1.3rem 0;
-	background: var(--primary-light-grey);
+	background: var(--primary-white);
+	color: var(--brown);
 }
 
 .Contact p {
@@ -53,7 +54,7 @@
 .contact-btn {
 	margin: 0.3125rem 0;
 	padding: 0.5rem 1rem;
-	background: var(--primary-cyan);
+	background: var(--primary-mint);
 	border-radius: 0.25rem;
 	font-size: 1rem;
 	font-family: 'Rubik Mono One', sans-serif;
@@ -75,7 +76,7 @@
 	position: absolute;
 	left: 0;
 	top: 0;
-	background-color: #ffe600;
+	background-color: var(--superman-red);
 	height: 100%;
 	width: 100%;
 	transform: translateY(-100%);

@@ -1,14 +1,12 @@
 .Portfolio {
 	padding: 0.7rem;
-	background: var(--primary-dark-grey);
+	background: var(--bgcolor);
 }
 
 .Portfolio-content {
 	width: 95%;
 	padding: 0 0.9375rem;
-	color: #fff !important;
-	/* color: var(--primary-text);
-	direction: ltr; */
+	color: var(--primary-white);
 }
 
 .project-description {

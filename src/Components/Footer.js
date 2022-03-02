@@ -1,15 +1,7 @@
 import React, { Component } from 'react';
-import { Link, Events, animateScroll as scroll, scroller } from 'react-scroll'
-
-import {
-    TwitterShareButton, 
-    LinkedinShareButton,
-} from 'react-share';
-import {
-    TwitterIcon, 
-    LinkedinIcon,
-} from 'react-share';
-
+import { Link, Events, animateScroll as scroll, scroller } from 'react-scroll';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import './Footer.css'
 
 class Footer extends Component {
@@ -116,25 +108,24 @@ class Footer extends Component {
                         </Link>  
                     </div>
                     <div className="container d-flex justify-content-center icons">
-                        <TwitterShareButton
-                            url={"www.micochango.com"}
-                            title={"Roberto M, Full Stack Web Dev"}
-                            quote={"Full Stack Web Developer"}
-                            hashtags={["FullStackDev"]}>
-                            <TwitterIcon
-                                round={true} 
-                                className="mx-3 icon">
-                            </TwitterIcon>    
-                        </TwitterShareButton>  
-                        <LinkedinShareButton
-                            url={"www.micochango.com"}
-                            title={"Roberto M, Full Stack Web Dev"}
-                            summary={"Experienced, driven and effective software developer. "}>
-                                <LinkedinIcon
-                                round={true}
-                                className="mx-3 icon">
-                                </LinkedinIcon>
-                        </LinkedinShareButton>
+                        <a
+                            className='btn btn-floating m-1'
+                            href='https://github.com/mayanhavoc'
+                            role='button'
+                            target='_blank'
+                            rel='noreferrer'
+                            >
+                            <FontAwesomeIcon className='no-border' icon={faGithub} size='3x'/>
+                        </a>
+                        <a
+                            className='btn btn-floating m-1'
+                            href='https://www.linkedin.com/in/roberto-mayen-hess/'
+                            role='button'
+                            target='_blank'
+                            rel='noreferrer'
+                            >
+                            <FontAwesomeIcon className='no-border' icon={faLinkedin} size='3x'/>
+                        </a>
                     </div>
                 </div>    
             </div>                

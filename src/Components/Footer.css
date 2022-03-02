@@ -1,7 +1,7 @@
 .Footer {
 	display: flex;
 	justify-content: center;
-	background: var(--primary-text);
+	background: var(--superman-blue);
 	padding: 3rem;
 	font-family: 'Rubik Mono One', sans-serif;
 	line-height: 200%;
@@ -9,12 +9,12 @@
 
 .Footer a {
 	cursor: pointer;
-	color: var(--primary-yellow) !important;
+	color: var(--superman-yellow) !important;
 	text-shadow: 1px 1px 1px var(--primary-red);
 }
 
 .Footer a:hover {
-	color: var(--primary-text);
+	color: var(--primary-white) !important;
 }
 
 .Footer p {

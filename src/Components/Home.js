@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Particles from "react-tsparticles";
 import Typed from 'react-typed';
 import { Link, Element, Events, animateScroll as scroll, scroller } from 'react-scroll';
+import Button from './Button';
 import './Home.css';
 
 class Home extends Component {
@@ -115,23 +116,32 @@ class Home extends Component {
             /> 
             <section className="Home component-wrapper">
                 <section className="Home-main">
-                    <h1 className="Home heading brand">Roberto M</h1>
+                  <div className="container d-flex flex-column justify-content-center">
+                    <img 
+                      src="./images/Roberto-M-logo.svg" 
+                      alt="Roberto M, Full Stack Web Developer" 
+                      className='d-block brand-img'
+                      />
                     <Typed
                         strings={["Full Stack Web Developer"]}
                         typeSpeed={40}
                         backSpeed={60}
+                        className="pt-3 typed"
                     />
                     <Link 
                     activeClass="active"
                     href="#"
                     to="Contact"
-                    className="Home-btn"
                     spy={true}
                     smooth={true}
                     offset={-70}
                     duration={500}
-                    >Contact me
+                    >
+                    <Button
+                      label="Contact me"
+                    ></Button>
                     </Link>
+                  </div>
                 </section>
             </section>
             </Element>

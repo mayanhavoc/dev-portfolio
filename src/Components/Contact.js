@@ -3,6 +3,7 @@ import {useForm} from 'react-hook-form';
 import emailjs from 'emailjs-com';
 import{ init } from 'emailjs-com';
 import './Contact.css'
+import Button from './Button';
 init(process.env.REACT_APP_EMAILJS_USERID);
 
 
@@ -124,14 +125,21 @@ const Contact = () => {
                                 {errors.description?.type === 'required' && "This field is required."}
                                 </span>
                             </div>
-                            <button 
+                            {/* <button 
                             className="btn contact-btn brand"
                             data-sitekey="reCAPTCHA_site_key"
                             data-callback ="onSubmit"
                             data-action="submit" 
                             id="contact-submit" 
                             type="submit">
-                            Submit</button>
+                            Submit</button> */}
+                            <Button label="Submit"
+                            data-sitekey="reCAPTCHA_site_key"
+                            data-callback ="onSubmit"
+                            id="contact-submit" 
+                            type="submit"
+                            >
+                            </Button>
                         </div>
                 </form>  
             </div>              

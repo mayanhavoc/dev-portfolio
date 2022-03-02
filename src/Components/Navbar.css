@@ -32,31 +32,29 @@ nav a.nav-link {
 }
 
 .navbar-nav > li > a {
-	margin-right: 0.3125rem;
-	margin-left: 0.3125rem;
+	margin-right: 0.125rem;
+	margin-left: 0.125rem;
 	color: var(--primary-white) !important;
 }
 
 .logo {
-	max-width: 17.25rem;
-	padding: 0 !important;
+	max-width: 100%;
 }
 
 .navbar-nav > li > a.active,
 .navbar-nav > li > a.active:focus,
 .navbar-nav > li > a:hover {
-	border-bottom: 0.1875rem solid var(--primary-orange);
+	border-bottom: 0.1875rem solid var(--superman-yellow);
 }
 
 .navbar-toggler {
-	background: var(--primary-yellow);
+	background: var(--superman-yellow);
 	margin-right: 1.625rem;
-	box-shadow: 0 0.1rem 0.01rem rgba(255, 0, 0.8);
+	box-shadow: 2px 2px var(--superman-red);
 }
 
 .hamburger-icon {
-	color: var(--primary-red);
-	/* border-top: 0.5px dotted var(--primary-yellow); */
+	color: var(--superman-red);
 }
 
 @media screen and (min-width: 280px) and (max-width: 374px) {

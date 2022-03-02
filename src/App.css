@@ -141,39 +141,22 @@ table {
 }
 
 /*===========================
-      01.COMMON css 
+      01.COMMON CSS 
 ===========================*/
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=PT+Serif:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cutive&family=Lato:wght@400;700;900&family=Lora:wght@400;500;700&family=Rubik+Mono+One&display=swap');
 
 :root {
 	--primary-white: #f6f3ed;
 	--primary-red: rgb(255, 65, 54);
-	--primary-orange: rgb(255, 179, 64);
-	--primary-yellow: rgb(255, 212, 38);
-	--primary-green: rgb(49, 222, 75);
-	--primary-mint: rgb(102, 212, 207);
-	--primary-teal: rgb(93, 230, 255);
-	--primary-cyan: rgb(112, 215, 255);
-	--primary-blue: rgb(64, 156, 255);
+	--primary-mint: #004370;
+	--primary-blue: #409cff;
 	--primary-indigo: rgb(125, 122, 255);
-	--primary-purple: rgb(125, 122, 255);
+	--primary-purple: #b5b4ce;
 	--primary-pink: rgb(255, 58, 95);
-	--primary-brown: rgb(181, 148, 105);
-	--primary-light-grey: rgb(244, 244, 244);
-	--primary-grey: rgb(152, 152, 157);
-	--primary-dark-grey: rgb(97, 97, 101);
-	--primary-dark: rgb(0, 0, 0);
-	--primary-text: rgb(17, 46, 81);
+	--superman-blue: #193b4d;
+	--superman-yellow: #ffeb00;
+	--superman-red: rgb(200, 0, 0);
+	--brown: #473a00;
 }
-
-/* * {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-} */
 
 *,
 *::before,
@@ -200,9 +183,8 @@ html body {
 
 	/* Color scheme */
 
-	--textcolor: #121212;
-	--bgcolor: #fff;
-	--highlight: #2749c9;
+	--textcolor: var(--primary-white);
+	--bgcolor: var(--superman-blue);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -214,12 +196,12 @@ html body {
 }
 
 .App {
-	font-family: 'Lato', sans-serif !important;
+	font-family: 'Merriweather Sans', sans-serif;
 	font-weight: normal;
 	font-style: normal;
 	font-size: 1rem;
 	text-align: justify;
-	color: var(--primary-text);
+	color: var(--superman-yellow);
 	z-index: 1;
 	margin: 0 auto;
 }
