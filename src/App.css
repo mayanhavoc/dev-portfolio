@@ -269,12 +269,23 @@ ol {
 .brand {
 	color: #ffe600 !important;
 	text-shadow: 0 0.1rem 0.01rem rgba(255, 0, 0.8);
+	font-family: 'Rubik Mono One', sans-serif;
+}
+
+.tagline-container {
+	background: black;
+}
+
+.tagline {
+	font-family: 'Merriweather Sans', sans-serif;
+	font-size: 2rem;
+	color: var(--primary-white);
 }
 
 .highlight {
 	font-weight: bold;
 	color: var(--highlight);
-	text-shadow: 0 0.1rem 0.01rem rgba(255, 0, 0.8);
+	text-shadow: 0 0.2rem 0.2rem rgba(255, 0, 0.8);
 }
 
 .sub-heading,

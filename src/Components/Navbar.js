@@ -50,6 +50,7 @@ class Navbar extends Component {
                   <img className="logo" src="./images/chilling.webp" alt="Me chillin' like a villain." />
                 </picture>
                 </Link>
+                <div className="heading brand">ROBERTO M</div>
                 <button 
                     className="navbar-toggler" 
                     type="button" 
@@ -89,13 +90,13 @@ class Navbar extends Component {
                                    activeClass="active-link" 
                                     className="nav-link"
                                     aria-current="page"
-                                    to="About"
+                                    to="Services"
                                     spy={true}
                                     smooth={true}
                                     offset={-70}
                                     duration={200} 
                                     >
-                                    About
+                                    Services
                                     </Link>
                                 </li>
                                 <li 
@@ -103,14 +104,14 @@ class Navbar extends Component {
                                     <Link
                                     activeClass="active-link" 
                                     className="nav-link" 
-                                    to="Services"
+                                    to="Portfolio"
                                     spy={true}
                                     smooth={true}
                                     offset={-70}
                                     duration={200}
                                     arria-current="page"
                                     >
-                                    Services
+                                    Portfolio
                                     </Link>
                                 </li>
                                 <li 
@@ -133,14 +134,14 @@ class Navbar extends Component {
                                     <Link
                                     activeClass="active-link"
                                     className="nav-link" 
-                                    to="Portfolio"
+                                    to="About"
                                     spy={true}
                                     smooth={true}
                                     offset={-70}
                                     duration={200}
                                     aria-current="page"
                                     >
-                                    Portfolio
+                                    About
                                     </Link>
                                 </li>
                                 <li 

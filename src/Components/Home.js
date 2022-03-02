@@ -116,31 +116,38 @@ class Home extends Component {
             /> 
             <section className="Home component-wrapper">
                 <section className="Home-main">
-                  <div className="container d-flex flex-column justify-content-center">
-                    <img 
-                      src="./images/Roberto-M-logo.svg" 
-                      alt="Roberto M, Full Stack Web Developer" 
-                      className='d-block brand-img'
-                      />
-                    <Typed
-                        strings={["Full Stack Web Developer"]}
-                        typeSpeed={40}
-                        backSpeed={60}
-                        className="pt-3 typed"
-                    />
-                    <Link 
-                    activeClass="active"
-                    href="#"
-                    to="Contact"
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={500}
-                    >
-                    <Button
-                      label="Contact me"
-                    ></Button>
+                  <div className="Home main-container container-fluid d-flex flex-column justify-content-center p-0 vh-100">
+                    <div className="tagline-container container-fluid h-100 d-flex flex-column justify-content-center align-items-center mt-5">
+                      <span className="tagline">Make a <span className="brand">splash</span></span>
+                      <span className="tagline">Increase your <span className="brand">sales</span></span>
+                      <span className="tagline">
+                        <span className="brand">Grow</span> your business
+                      </span>
+                    </div>
+                    <div className="container h-100 d-flex flex-column justify-content-center align-items-center">
+                      <Link 
+                        activeClass="active"
+                        href="#"
+                        to="Contact"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
+                      >
+                        <Button label="I need a site"></Button>
+                      </Link>
+                      <Link 
+                        activeClass="active"
+                        href="#"
+                        to="Contact"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
+                      >
+                        <Button label="I need a dev"></Button>
                     </Link>
+                    </div>
                   </div>
                 </section>
             </section>

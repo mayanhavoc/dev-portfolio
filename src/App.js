@@ -16,10 +16,10 @@ class App extends Component {
       <div> 
         <Navbar />
         <Home />
-        <About />
         <Services />
-        <Experience />
         <Portfolio />
+        <Experience />
+        <About />
         <Contact />
         <Footer /> 
     </div>

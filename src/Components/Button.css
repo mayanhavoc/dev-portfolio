@@ -1,5 +1,5 @@
 .Btn {
-	margin: 1.3125rem 0;
+	margin: 1.3125rem 1rem;
 	padding: 0.5rem 1rem;
 	background: var(--primary-mint);
 	font-size: 1rem;
@@ -7,6 +7,7 @@
 	font-weight: 300;
 	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 	border: none;
+	border-radius: 0.5rem;
 	text-decoration: none;
 	position: relative;
 	transition: all 0.5s;

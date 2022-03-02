@@ -9,8 +9,8 @@ class Experience extends Component {
             <Element className="Experience container">
                 <h2 className="section-heading sub-heading py-5 brand">Experience</h2>
                 <div className="row">
-                    <div className="col-sm-6 col-lg-4 my-1">
-                        <div className="card h-100">
+                    <div className="col-sm-6 col-lg-4 my-3">
+                        <div className="card h-100 m-2">
                             <img src="../images/cme-logo.png" className="xp-img card-img-top" alt="CME logo" loading="lazy" />
                             <div className="card-body">
                                 <h5 className="card-title brand sub-heading experience-heading">Centro Municipal de Emprendimiento</h5>
@@ -23,8 +23,8 @@ class Experience extends Component {
                             </div>
                         </div>
                     </div>
-                    <div className="col-sm-6 col-lg-4 my-1">
-                        <div className="card h-100">
+                    <div className="col-sm-6 col-lg-4 my-3">
+                        <div className="card h-100 m-2">
                             <img src="../images/aerostatika-logo.png" className="xp-img card-img-top" alt="CME logo" loading="lazy" />
                             <div className="card-body">
                                 <h5 className="card-title brand sub-heading experience-heading">Aerostatika</h5>
@@ -36,8 +36,8 @@ class Experience extends Component {
                             </div>
                         </div>
                     </div>
-                    <div className="col-sm-6 col-lg-4 my-1">
-                            <div className="card h-100">
+                    <div className="col-sm-6 col-lg-4 my-3">
+                            <div className="card h-100 m-2">
                                 <img src="../images/espacios-extremos-logo.png" className="xp-img card-img-top" alt="espacios extremos logo" loading="lazy" />
                                 <div className="card-body">
                                     <h5 className="card-title brand sub-heading experience-heading">Espacios Extremos</h5>
@@ -52,8 +52,8 @@ class Experience extends Component {
                     </div>
                 </div>
                 <div className="row my-2">
-                        <div className="col-sm-6 col-lg-4 my-1">
-                            <div className="card">
+                        <div className="col-sm-6 col-lg-4 my-3">
+                            <div className="card h-100 m-2">
                                 <img src="../images/bacilongas-logo.png" className="xp-img card-img-top" alt="Bacilongas logo" loading="lazy" />
                                 <div className="card-body">
                                     <h5 className="card-title brand sub-heading experience-heading">Bacilongas</h5>
@@ -66,8 +66,8 @@ class Experience extends Component {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-sm-6 col-lg-4 my-1">
-                            <div className="card">
+                        <div className="col-sm-6 col-lg-4 my-3">
+                            <div className="card h-100 m-2">
                                 <img src="../images/blogjob-logo.png" className="xp-img card-img-top" alt="Bacilongas logo" loading="lazy" />
                                 <div className="card-body">
                                     <h5 className="card-title brand sub-heading experience-heading">Blogjob!</h5>
