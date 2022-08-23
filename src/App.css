@@ -144,18 +144,13 @@ table {
       01.COMMON CSS 
 ===========================*/
 
+/* Redefine color palette */
+
 :root {
-	--primary-white: #f6f3ed;
-	--primary-red: rgb(255, 65, 54);
-	--primary-mint: #004370;
-	--primary-blue: #409cff;
-	--primary-indigo: rgb(125, 122, 255);
-	--primary-purple: #b5b4ce;
-	--primary-pink: rgb(255, 58, 95);
-	--superman-blue: #193b4d;
-	--superman-yellow: #ffeb00;
-	--superman-red: rgb(200, 0, 0);
-	--brown: #473a00;
+	--txt-white: #f6f3ed;
+	--bg-red: #7A0600;
+	--bg-blue: #193b4d;
+	--txt-yellow: #FFF047;
 }
 
 *,
