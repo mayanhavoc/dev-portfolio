@@ -17,6 +17,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;700&family=Rubik+Mono+One&display=swap" rel="stylesheet">     
     <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/normalize.css">
     <title>Roberto | Web Developer </title>
   </head>
   <body data-spy="scroll" data-target="#scroll-spy">
@@ -24,12 +25,25 @@
     <div id="root"></div>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous" async></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous" async></script> 
-    <script src="https://cdn.jsdelivr.net/npm/tsparticles@1.28.0/dist/tsparticles.min.js" async></script>
-    <!-- <script src="https://www.google.com/recaptcha/api.js"></script>
     <script>
-      function onSubmit(token) {
-        document.getElementById("contact-submit").submit();
-      }
-    </script> -->
+      $(function(){
+    var windowH = $(window).height();
+    var wrapperH = $('#wrapper').height();
+    if(windowH > wrapperH) {                            
+        $('#wrapper').css({'height':($(window).height())+'px'});
+    }                                                                               
+    $(window).resize(function(){
+        var windowH = $(window).height();
+        var wrapperH = $('#wrapper').height();
+        var differenceH = windowH - wrapperH;
+        var newH = wrapperH + differenceH;
+        var truecontentH = $('#truecontent').height();
+        if(windowH > truecontentH) {
+            $('#wrapper').css('height', (newH)+'px');
+        }
+
+    })          
+});
+    </script>
     </body>
 </html>

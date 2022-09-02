@@ -1,28 +1,26 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { Component, } from 'react';
-import Navbar from './components/Navbar';
-import Home from './components/Home';
-import About from './components/About';
-import Services from './components/Services';
-import Portfolio from './components/Portfolio';
-import Experience from './components/Experience';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import Navbar from './Components/Navbar';
+import Home from './Components/Home';
+import Projects from './Components/Projects';
+import Projectss from './Components/Projectss';
+// import About from './Components/About';
+// import Contact from './Components/Contact';
+// import Footer from './Components/Footer';
 
 class App extends Component {
   render(){
     return (
-      <div> 
+      <main> 
         <Navbar />
         <Home />
-        <Services />
-        <Portfolio />
-        <Experience />
-        <About />
-        <Contact />
-        <Footer /> 
-    </div>
+        {/* <Projects /> */}
+        <Projectss />
+        {/* <About />
+        <Contact /> */}
+        {/* <Footer />  */}
+    </main>
     );
   }
 }

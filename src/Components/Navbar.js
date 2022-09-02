@@ -36,7 +36,7 @@ class Navbar extends Component {
       }
     render() {
         return (
-            <nav className="navbar navbar-expand-xl navbar-expand-lg bg-dark fixed-top" id="navbar">
+            <nav className="navbar navbar-expand-xl navbar-expand-lg bg-light fixed-top ps-3 py-2" id="navbar">
                 <Link
                 className="nav-link"
                 activeClass="active" 
@@ -50,7 +50,6 @@ class Navbar extends Component {
                   <img className="logo" src="./images/chilling.webp" alt="Me chillin' like a villain." />
                 </picture>
                 </Link>
-                <div className="heading brand">ROBERTO M</div>
                 <button 
                     className="navbar-toggler" 
                     type="button" 
@@ -87,21 +86,6 @@ class Navbar extends Component {
                                 <li 
                                 className="nav-item">
                                     <Link
-                                   activeClass="active-link" 
-                                    className="nav-link"
-                                    aria-current="page"
-                                    to="Services"
-                                    spy={true}
-                                    smooth={true}
-                                    offset={-70}
-                                    duration={200} 
-                                    >
-                                    Services
-                                    </Link>
-                                </li>
-                                <li 
-                                className="nav-item">
-                                    <Link
                                     activeClass="active-link" 
                                     className="nav-link" 
                                     to="Portfolio"
@@ -111,22 +95,7 @@ class Navbar extends Component {
                                     duration={200}
                                     arria-current="page"
                                     >
-                                    Portfolio
-                                    </Link>
-                                </li>
-                                <li 
-                                className="nav-item">
-                                    <Link
-                                    activeClass="active-link" 
-                                    className="nav-link" 
-                                    to="Experience"
-                                    spy={true}
-                                    smooth={true}
-                                    offset={-70}
-                                    duration={200}
-                                    aria-current="page"
-                                    >
-                                    Experience
+                                    Projects
                                     </Link>
                                 </li>
                                 <li 

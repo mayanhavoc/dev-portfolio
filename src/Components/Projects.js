@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { Element } from 'react-scroll';
-import './Portfolio.css';
+import './Projects.css';
 
 
-class Portfolio extends Component {
+class Projects extends Component {
     render() {
         return (
-            <Element className="Portfolio">
-                <h2 className="section-heading sub-heading py-5 brand">Portfolio</h2>
+            <Element className="Projects">
+                <h2 className="section-heading sub-heading py-5 brand">Projects</h2>
                 <div className="row mx-auto my-5">
                     <div className="col-lg-6">
                         <div style={{width:"100%", height:"0", paddingBottom:"52%", position:"relative"}}>
@@ -131,4 +131,4 @@ class Portfolio extends Component {
     }
 }
 
-export default Portfolio;
+export default Projects;

@@ -1,6 +1,4 @@
-# Welcome to my portfolio repository!
+# Full stack dev
 
-This site is built with React and deployed to Netlify.
-It uses emailjs for the contact form and Joi for validation.
+Hi, my name is Roberto, I am a professional full stack developer. 
 
-New projects and features to come!
